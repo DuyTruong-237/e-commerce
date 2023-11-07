@@ -1,0 +1,49 @@
+.Categories{
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(243, 228, 209);
+}
+.cat-content{
+    height: 50px;
+}
+.cat-items{
+   
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto auto; /* Tạo ra hai cột với kích thước bằng nhau */
+    grid-gap: 20px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.cat-item{
+    background-image: url("./aokhoac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(31, 31, 31,0.3);
+    
+    width: 100px;
+    height: 130px;
+    background-color: rgb(247, 244, 247);
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+.cat-item:hover{
+    transform: scale(1.2);
+}
+.overlay{
+    
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cat-name{
+    color: rgb(242, 221, 224);
+    font-size: 19px;
+   
+}
