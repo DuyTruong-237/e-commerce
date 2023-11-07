@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  min-height: 2000px;
-  background-color: rgb(237, 245, 252);
+  min-height: 100px;
+  background-color: rgb(240, 240, 251);
 }
 .Header{
   height: 100px;

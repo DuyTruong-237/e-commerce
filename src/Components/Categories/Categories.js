@@ -87,16 +87,8 @@ export default function Categories() {
                         <div className='cat-name'>Áo Khoác</div>
                     </div>
                 </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
+                
+               
                
                 
             </div>
