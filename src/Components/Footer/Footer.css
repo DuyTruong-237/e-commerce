@@ -1,0 +1,55 @@
+.footerWrapper {
+    background-color: rgb(252, 84, 109);
+    color: white;
+    width: 100%;
+}
+
+.footerText {
+    margin-top: 50px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.footerText_title {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin: 50px 0px 0px 30px;
+}
+
+.footerText_title > b {
+    margin-bottom: 30px;
+}
+
+.footerText_content {
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.signupBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 30px;
+}
+
+.signupBtn:hover {
+    color: rgb(255, 53, 87);
+}
+
+.footerIcon {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footerIcon > span {
+    margin: 10px;
+}
+
+.footerIcon > p {
+    margin-top: 20px;
+}
