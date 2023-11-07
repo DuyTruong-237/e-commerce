@@ -9,18 +9,30 @@ export default function Header() {
         </div>
         <div class="headerMenu">
           <div class="subMenuTop">
-              
+              <ul class="navMenutop">
+                <li >
+                  <a href="#" class="subHeader inlineBlock textWhite sizeText15">
+                  <img src='./images/Icon/notification.svg' class="cssSvg" alt='icon notification'></img>
+                  Thông Báo
+                  </a>
+                </li>
+                <li >
+                  <a href="#" class="subHeader inlineBlock textWhite sizeText15">
+                  <img src='./images/Icon/earthglobe.svg' class="cssSvg" alt='icon notification'></img>
+                  Ngôn Ngữ
+                  </a>
+                </li>
+                <li >
+                  <a href="#" class="subHeader inlineBlock textWhite sizeText15">
+                  <img src='./images/Icon/question.svg' class="cssSvg" alt='icon notification'></img>
+                  Góp Ý/ Thắc Mắc 
+                  </a>
+                </li>
+              </ul>
           </div>
           <div class="subMenuBot">
             <div class="seachBar">
-              <div class="input-group border-input">
-                <div class="form-outline">
-                  <input type="search" id="form1" class="form-control css-form "  placeholder='Search'/>
-                </div>
-                <a type="button" class="css-button-a" href='#'>
-                  <img class="searchIcon" src='./images/Icon/search.svg'></img>
-                </a>
-              </div>
+              
             </div>
             <div class="headerCart">
 

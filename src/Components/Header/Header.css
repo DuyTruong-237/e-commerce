@@ -17,10 +17,17 @@
 }
 .headerMenu{
     display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 .subMenuTop{
-height: 60px;
+height: 40px;
 
+
+}
+.navMenutop li{
+    display : inline-block;
+    padding : 10px 20px;
 }
 .subMenuBot{
 
@@ -42,4 +49,35 @@ height: 60px;
 .border-input{
     border: 1px solid  rgb(231, 61, 92);
     border-radius: 10px;
+}
+.cssSvg{
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-right: 10px;
+}
+li{
+    list-style-type: none;
+}
+.inlineBlock{
+    display: inline-block;
+}
+.textWhite{
+    color: white ;
+}
+a{
+    text-decoration: none !important;
+}
+.subHeader {
+    
+}
+.sizeText15{
+    font-size: 15px;
+}
+.input-group1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
 }
