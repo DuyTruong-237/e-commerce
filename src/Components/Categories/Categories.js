@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Categories.css"
 import Background from '../BackGround-Items/Background'
+import didong from './dientu.jpg'
 export default function Categories() {
   return (
     <Background title="Categories" className="cat-br" >
@@ -12,7 +13,7 @@ export default function Categories() {
                         <div className='cat-name'>Áo Khoác</div>
                     </div>
                 </div>
-                <div className='cat-item'>
+                <div className='cat-item' >
                     <div className='overlay'>
                         <div className='cat-name'>Áo Khoác</div>
                     </div>
@@ -96,3 +97,14 @@ export default function Categories() {
     </Background>
   )
 }
+function BackgroundImageComponent({ imageUrl, children }) {
+    const style = {
+      backgroundImage: `url(${imageUrl})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      // Thêm các styles khác mà bạn cần
+    };
+  
+    return <div style={style}>{children}</div>;
+  }
