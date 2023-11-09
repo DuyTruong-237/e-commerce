@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <div >
       
-
+      <div>Nek bà già</div>
     </div>
   )
 }

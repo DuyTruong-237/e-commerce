@@ -5,7 +5,7 @@ export default function Background(props) {
     <div className='br-body'>
         <div className='br-name-tab'>{props.title}</div>
         <div className='br-line'></div>
-        {props.children}
+        <div className='br-chil'>{props.children}</div>
     </div>
   )
 }

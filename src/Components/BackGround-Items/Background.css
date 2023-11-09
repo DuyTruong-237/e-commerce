@@ -1,5 +1,5 @@
 .br-body{
-    min-height: 400px;
+    min-height: 200px;
     width: 70%;
     margin: auto;
     padding: 0 1%;
@@ -16,4 +16,7 @@
     width: 100%;
     height: 2px;
     background-image: linear-gradient(to left, rgb(239, 104, 122), rgb(251, 206, 211));;
+}
+.br-chil{
+    min-height: 300px;
 }
