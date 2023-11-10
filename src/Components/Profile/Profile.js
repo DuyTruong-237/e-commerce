@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Profile.css"
-
+//fix avatar: đường dẫn "./images/avatar.jpe" của bà đang sai nha với lại react muốn gọi đường dẫn ảnh phải import bên ngoài trước mới gán dô nha tui import dưới dòng này
+//fix button: Cái button không ăn màu là do chị sài scss nó có cái file buttons.scss nó định nghĩa class "btn" có bg-color: var; mà em ko biết sửa file scss  ở đâu nên em bỏ class"btn" trong button save nếu chị biết thì zo file đó sửa lại r add class btn zo sử dụng bth không thì chị css trên mấy cái class nó đang có
+import Avatar from "../../Assets/Images/avatar.jpeg"
 export default function Profile() {
   return (
     <div class="container profileWH">
@@ -11,7 +13,7 @@ export default function Profile() {
                 <div class="ppAvatar">
                     <div class="ppAvatarPlaceholder">
                     </div>
-                    <img class="ppAvatarImg" src="./images/avatar.jpeg" alt="avatar"/>
+                    <img class="ppAvatarImg" src={Avatar} alt="avatar"/>
                 </div>
             </a>
             <div class="ppUserWrapper">
@@ -205,7 +207,7 @@ export default function Profile() {
                                         <td class="espR83"><label></label>
                                         </td>
                                         <td class="Tmj5Z6">
-                                            <button type="button" class="btn btn-solid-primary btn--m btn--inline " aria-disabled="false">save</button>
+                                            <button type="button" className="btn-solid-primary btn--m btn--inline bg-color " aria-disabled="false">save</button>
                                     </td>
                                 </tr>
                                 </table>

@@ -3,6 +3,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.btn{
+    background-color: none;
+}
 .profileWH{
     display: flex;
     padding: 1.25rem 0 3.125rem;
@@ -331,6 +334,7 @@ tr{
     position: relative;
     overflow: visible;
     outline: 0;
+    
     background-color:  rgb(231, 61, 92);
 }
 .btn--m {
