@@ -3,6 +3,10 @@ import "./Profile.css"
 //fix avatar: đường dẫn "./images/avatar.jpe" của bà đang sai nha với lại react muốn gọi đường dẫn ảnh phải import bên ngoài trước mới gán dô nha tui import dưới dòng này
 //fix button: Cái button không ăn màu là do chị sài scss nó có cái file buttons.scss nó định nghĩa class "btn" có bg-color: var; mà em ko biết sửa file scss  ở đâu nên em bỏ class"btn" trong button save nếu chị biết thì zo file đó sửa lại r add class btn zo sử dụng bth không thì chị css trên mấy cái class nó đang có
 import Avatar from "../../Assets/Images/avatar.jpeg"
+import userAcc from "../../Assets/Images/userProfile.svg"
+import userShop from "../../Assets/Images/shop.svg"
+import shoppingBag from "../../Assets/Images/shopping-bag.svg"
+import voucher from "../../Assets/Images/coupon.svg"
 export default function Profile() {
   return (
     <div class="container profileWH">
@@ -37,7 +41,7 @@ export default function Profile() {
                 <div class="stardust-dropdown__item-header">
                     <a class="+1U02e" href="#">
                         <div class="bfikuD">
-                            <img src="./images/userProfile.svg"/>
+                            <img src={userAcc}/>
                         </div>
                         <div class="DlL0zX">
                             <span class="adF7Xs">My Account</span>
@@ -67,7 +71,7 @@ export default function Profile() {
                 <div class="stardust-dropdown__item-header">
                     <a class="+1U02e" href="#">
                         <div class="bfikuD">
-                            <img class="sizeImgIcon" src="./images/bill.svg"/>
+                            <img class="sizeImgIcon" src={shoppingBag}/>
                         </div>
                         <div class="DlL0zX">
                             <span class="adF7Xs">My Purchase</span>
@@ -80,6 +84,41 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
+            <div class="stardust-dropdown">
+                <div class="stardust-dropdown__item-header">
+                    <a class="+1U02e" href="#">
+                        <div class="bfikuD">
+                            <img class="sizeImgIcon" src={userShop}/>
+                        </div>
+                        <div class="DlL0zX">
+                            <span class="adF7Xs">My Shop</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="stardust-dropdown__item-body l000" >
+                    <div class="Yu7gVR">
+
+                    </div>
+                </div>
+            </div>
+            <div class="stardust-dropdown">
+                <div class="stardust-dropdown__item-header">
+                    <a class="+1U02e" href="#">
+                        <div class="bfikuD">
+                            <img class="sizeImgIcon" src={voucher}/>
+                        </div>
+                        <div class="DlL0zX">
+                            <span class="adF7Xs">My Vouchers</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="stardust-dropdown__item-body l000" >
+                    <div class="Yu7gVR">
+
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
     </div>
@@ -206,8 +245,10 @@ export default function Profile() {
                                     <tr>
                                         <td class="espR83"><label></label>
                                         </td>
-                                        <td class="Tmj5Z6">
-                                            <button type="button" className="btn-solid-primary btn--m btn--inline bg-color " aria-disabled="false">save</button>
+                                        <td class="Tmj5Z6 ">
+                                            <div class="BtnA">
+                                        <a href="#" onclick="#" class="cssBtn">Save</a>
+                                        </div>
                                     </td>
                                 </tr>
                                 </table>
@@ -217,11 +258,11 @@ export default function Profile() {
                             <div class="scvgOW">
                                 <div class="XWsmVn">
                                     <div class="LoNm4g bgImg">
-
+                                        <img src={Avatar} class="bgImg"></img>
                                     </div>
                                 </div>
-                                <input class="bMWDYw" type="file" accept=".jpg,.jpeg,.png"/>
-                                <button type="button" class="btn btn-light btn--m btn--inline">Select Image</button>
+                                <input class="bMWDYw" type='file' accept=".jpg,.jpeg,.png"/>
+                                <button type="button"  class="btn btn-light btn--m btn--inline">Select Image</button>
                                 <div class="L4SAGB"><div class="SlaeTm">File size: maximum 1 MB</div>
                                 <div class="SlaeTm">File extension: .JPEG, .PNG</div>
                     </div>
