@@ -3,12 +3,11 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Categories from './Components/Categories/Categories';
 import Profile from './Components/Profile/Profile';
-import ProductItemNormal from './Components/Product/ProductItemNormal'
-import Login from './Screens/Login/Login'
+import Item from './Components/Items/Item'
 function App() {
   return (
     <div className="App">
-      <ProductItemNormal/>
+      <Item/>
     </div>
   );
 }

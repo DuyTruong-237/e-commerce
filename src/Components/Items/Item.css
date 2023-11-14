@@ -1,0 +1,99 @@
+.itemWrapper {
+    display: flex;
+}
+.itemImage{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    align-items: flex-start;
+    background-color: white;
+}
+.mainImage_Wrapper {
+    
+}
+.mainImage {
+    width: 450px;
+}
+
+.sliderImage_Wrapper {
+    width: 450px;
+}
+
+.silderImage {
+    width: 90px;
+    
+}
+
+.sildeImage:hover {
+    cursor: pointer;
+}
+
+.itemInfo_Wrapper {
+    margin-right: 150px;
+    padding: 0px 30px 0px 50px;
+    background-color: white;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.itemName{
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.priceItem {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #ee4d2d;
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: #fafafa;
+}
+
+.itemInfo {
+    margin-left: 20px;
+    color: #757575;
+    font-weight: 400;
+}
+
+.itemVoucher {
+    margin-top: 50px;
+    display: flex;
+}
+.voucherTicket {
+    background-color: #f5cbd1;
+    color: #d0011b;
+    margin-left: 30px;
+    padding: 2px;
+}
+
+.itemInsurance {
+    margin-top: 20px;
+    display: flex;    
+}
+
+.itemInsurance > div:nth-child(1) {
+    margin-left: 20px;
+    color: #000;
+}
+
+.itemInsurance > div:nth-child(2) {
+    background-color: #ee4d2d;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+.itemInsurance > div:nth-child(3) {
+    margin-left: 20px;
+    color: #08f;
+}
