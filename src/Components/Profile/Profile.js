@@ -1,7 +1,5 @@
 import React from 'react'
 import "./Profile.css"
-//fix avatar: đường dẫn "./images/avatar.jpe" của bà đang sai nha với lại react muốn gọi đường dẫn ảnh phải import bên ngoài trước mới gán dô nha tui import dưới dòng này
-//fix button: Cái button không ăn màu là do chị sài scss nó có cái file buttons.scss nó định nghĩa class "btn" có bg-color: var; mà em ko biết sửa file scss  ở đâu nên em bỏ class"btn" trong button save nếu chị biết thì zo file đó sửa lại r add class btn zo sử dụng bth không thì chị css trên mấy cái class nó đang có
 import Avatar from "../../Assets/Images/avatar.jpeg"
 import userAcc from "../../Assets/Images/userProfile.svg"
 import userShop from "../../Assets/Images/shop.svg"
