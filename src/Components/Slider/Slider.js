@@ -50,7 +50,7 @@ function Slider() {
         <div className='sli-item'>
             <img className='sli-item-img'/>
     
-            <div className='sli-item-name' >Vocher</div>
+            <div className='sli-item-name' >Voucher</div>
         </div>
         <div className='sli-item'>
             <img className='sli-item-img'/>
