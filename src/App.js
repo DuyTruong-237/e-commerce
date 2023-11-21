@@ -6,6 +6,7 @@ import Profile from './Components/Profile/Profile';
 import Item from './Components/Items/Item'
 import ImageSlider from './Components/Product/ProductSlider';
 import ProductItem from './Components/Product/ProductItem';
+import Cart from './Components/Cart/Cart'
 function App() {
   return (
     <div className="App">

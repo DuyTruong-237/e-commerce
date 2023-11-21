@@ -31,7 +31,7 @@ const ImageSlider = () => {
        <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </div>
-  );s
+  );
 };
 
 export default ImageSlider;

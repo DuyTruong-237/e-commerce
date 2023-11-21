@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Categories.css"
-import Background from '../BackGround-Items/Background'
+import Background from '../BackGroundItems/Background'
 import didong from './dientu.jpg'
 export default function Categories() {
   return (
