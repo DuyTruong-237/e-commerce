@@ -1,0 +1,51 @@
+.stProductCart{
+    position: relative;
+    padding-bottom: 1px;
+}
+.pdcart:last-child{
+    padding-bottom: 20px;
+}
+.pdcart:first-child{
+    padding-top: 15px;
+}
+.inforItemWrap{
+    display: flex;
+    align-items: center;
+}
+.cbFirst{
+    padding: 0 12px 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 58px;
+    box-sizing: border-box;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.stardust-checkbox__input {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.productinfo{
+    display: flex;
+    width: 29.03811%;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+}
+.pdi1{
+    display: flex;
+}
+.pdi2{
+
+}
+.img_pdi{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+

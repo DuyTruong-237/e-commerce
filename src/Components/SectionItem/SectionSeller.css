@@ -1,0 +1,50 @@
+.sectionWrapper{
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    background: #fff;
+    overflow: visible;
+    margin-bottom: 0.9375rem;
+}
+.sthidden{
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.shopsale{
+    height: 3.75rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.subSS{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.subSStt{
+    padding: 0 12px 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 58px;
+    box-sizing: border-box;
+}
+.mg-left10{
+    margin-left: 10px;
+}
+.labelbestWrap{
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    font-weight: 500;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+}
+.labelbest{
+    display: flex;
+    align-items: center;
+}

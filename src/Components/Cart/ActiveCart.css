@@ -1,0 +1,74 @@
+.ppActiveCart{
+ width: 100%;
+ 
+}
+.mglr{
+    margin-left: auto;
+    margin-right: auto;
+}
+.AC-Content{
+ width: 90%;
+
+}
+.AC-Header{
+ text-align: left;
+ padding: 10px 20px 10px 20px;
+}
+.AC-Text{
+    font-weight: 700;
+}
+.AC-Body{
+
+}
+.cproduct{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    border-radius: 3px;
+    height: 55px;
+    font-size: 14px;
+    background: #fff;
+    margin-bottom: 12px;
+    color: #888;
+    padding: 0 20px;
+}
+.cproduct1{
+    padding: 0 12px 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 58px;
+    box-sizing: border-box;
+}
+.stardust-checkbox {
+    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    position: relative;
+    color: rgba(0,0,0,.54);
+    max-width: 400px;
+}
+.clproduct{
+    color: rgba(0,0,0,.8);
+    width: 46.27949%;
+}
+.clprice{
+    width: 15.88022%;
+}
+.clprice ,.clquanti,.cltotal,.claction{
+text-align: center;
+}
+.clquanti{
+    width: 15.4265%;
+}
+.cltotal{
+    width: 10.43557%;
+   
+}
+.claction{
+    width: 12.70417%;
+}
