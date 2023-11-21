@@ -1,18 +1,18 @@
 .itemWrapper {
     display: flex;
 }
+
 .itemImage{
     display: flex;
     flex-direction: column;
     margin-left: 150px;
     align-items: flex-start;
+    flex-shrink: 1;
     background-color: white;
 }
-.mainImage_Wrapper {
-    
-}
+
 .mainImage {
-    width: 450px;
+    width: 100%;
 }
 
 .sliderImage_Wrapper {
@@ -21,11 +21,36 @@
 
 .silderImage {
     width: 90px;
-    
 }
 
 .sildeImage:hover {
     cursor: pointer;
+}
+
+.utilities_Wrapper{
+    display: flex;
+    margin: 20px;
+}
+
+.socialSharing {
+    border-right: 2px solid #e1e1e1;
+    padding-right: 20px;
+}
+
+.socialSharing > span {
+    margin: 0px 20px;
+}
+
+.wishList_Wrapper {
+}
+
+.wishList_Wrapper > span:nth-child(1) {
+    margin: 3px 10px 0px 20px;
+}
+
+.socialLogo {
+    width: 20px;
+    margin-right: 5px;
 }
 
 .itemInfo_Wrapper {
@@ -47,7 +72,7 @@
 .priceItem {
     font-size: 1.875rem;
     font-weight: 500;
-    color: #ee4d2d;
+    color: rgb(255, 53, 87);
     margin-top: 30px;
     padding: 15px 20px;
     background-color: #fafafa;
@@ -60,12 +85,12 @@
 }
 
 .itemVoucher {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
 }
 .voucherTicket {
     background-color: #f5cbd1;
-    color: #d0011b;
+    color: rgb(255, 53, 87);
     margin-left: 30px;
     padding: 2px;
 }
@@ -81,7 +106,7 @@
 }
 
 .itemInsurance > div:nth-child(2) {
-    background-color: #ee4d2d;
+    background-color: rgb(255, 53, 87);
     border-radius: 8px;
     border-bottom-left-radius: 0;
     color: #fff;
@@ -97,3 +122,160 @@
     margin-left: 20px;
     color: #08f;
 }
+
+
+.ratingItem > button{
+    border: none;
+    border-right: 2px solid rgba(0,0,0,.14);
+    color: rgb(255, 53, 87);
+    font-weight: 500;
+    font-size: 18px;
+    background-color: white;
+    padding-right: 20px;
+}
+
+.ratingStar > img:nth-child(5) {
+    clip-path: inset(0 50% 0 0);
+}
+
+.ratingStarIcon {
+    width: 28px;
+    margin: 15px 5px 15px 0px;
+}
+
+.ratingCount > span {
+    color: #a0a0a0;
+    margin-left: 5px;
+}
+
+.soldCount > span {
+    color: #a0a0a0;
+    margin-left: 5px;
+}
+
+.freeShipImg {
+    width: 32px;
+    margin: 10px 5px 10px 20px;
+}
+
+.itemShipping > span{
+    color: #000;
+}
+
+.itemColor{
+    display: flex;
+}
+
+.itemColor > span {
+    margin-top: 10px;
+}
+
+.itemColor > div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+}
+
+.itemColor_btn{
+    min-width: 180px;
+    min-height: 30px;
+    overflow: visible;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.8);
+    text-align: left;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.09);
+    position: relative;
+    background: #fff;
+    outline: 0;
+    word-break: break-word;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0px 0px 20px;
+}
+
+.productColor {
+    width: 24px;
+    position: absolute;
+    left: 5px;
+    margin-right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.itemColor_btn > span {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.itemQuantity_num{
+    border: 1px solid #fafafa;
+    width: 50px;
+    text-align: center;
+}
+
+.decrease_btn,
+.increase_btn {
+    border: 1px solid #fafafa;
+}
+
+.decrease_btn{
+    margin: 20px 0px 0px 21px;
+}
+
+.increase_btn {
+    margin-right: 20px;
+}
+
+.buyModal {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 0px 20px;
+    
+}
+
+.addToCart{
+    background-color: rgb(255, 226, 226);
+    width: 35%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 53, 87);
+    border-radius: 2px;
+}
+
+.addToCart > span {
+    font-size: 15px;
+    color: rgb(255, 53, 87);
+    font-weight: 500;
+}
+
+.addToCart:hover{
+    cursor: pointer;
+    background-color: rgba(208,1,27,.08);
+}
+
+.buyNow{
+    background-color: rgb(255, 53, 87);
+    width: 35%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 53, 87);
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.buyNow:hover{
+    cursor: pointer;
+    background-color: rgb(254, 74, 104);
+}
+
