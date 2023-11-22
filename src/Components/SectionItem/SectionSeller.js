@@ -26,11 +26,15 @@ export default function SectionSeller() {
                                 </defs>
                             </svg>
                         </div>
-                        <span class="mg-left10">VUON THU CUNG </span>
+                        <span class="mg-left10">M.A.C OFFICIAL </span>
                     </a>
-                    <SectionItems />
+                  
                 </div>
             </div>
+            <SectionItems />
+            <SectionItems />
+            <SectionItems />
+            <SectionItems />
         </section>
     )
 }
