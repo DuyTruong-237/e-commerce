@@ -1,3 +1,4 @@
+
 .ppActiveCart{
  width: 100%;
  
@@ -7,7 +8,7 @@
     margin-right: auto;
 }
 .AC-Content{
- width: 90%;
+ width: 95%;
 
 }
 .AC-Header{
@@ -19,6 +20,22 @@
 }
 .AC-Body{
 
+}
+.Productwrapper{
+    width: 100%;
+    display: flex;
+}
+
+#form_CheckProduct{
+    width: 100%;
+}
+.pctleft{
+    width: 80%;
+   
+}
+.pctright{
+    width: 20%;
+    flex:1;
 }
 .cproduct{
     display: flex;
