@@ -9,8 +9,6 @@ export default function AdsCanvas(){
                 <div class="ttbodyads">
                     <ProductAds/>
                     <ProductAds/>
-                    
-                   
                 </div>
             </div>
         </div>
