@@ -37,6 +37,8 @@
     border-radius: 15px;
     border: none;
     margin-top: 30px;
+    background-color: white;
+    
 }
 
 .signupBtn:hover {
@@ -46,6 +48,7 @@
 .footerIcon {
     margin-top: 50px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .footerIcon > span {

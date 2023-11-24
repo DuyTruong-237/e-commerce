@@ -12,7 +12,7 @@
     object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
   }
   
-  button {
+  .image-slider > button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -22,10 +22,4 @@
     cursor: pointer;
   }
   
-  button:first-child {
-    left: 10px;
-  }
-  
-  button:last-child {
-    right: 10px;
-  }
+ 

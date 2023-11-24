@@ -22,6 +22,10 @@ export default function Header() {
                   <a href="#" class="subHeader inlineBlock textWhite sizeText15">
                     <img src='./images/Icon/earthglobe.svg' class="cssSvg" alt='icon notification'></img>
                     Language
+                    <ul className="subnav">
+                                   <li><a href="/">English</a></li>
+                                   <li><a href="/">Vietnamese</a></li>
+                    </ul>
                   </a>
                 </li>
                 <li >
@@ -34,6 +38,12 @@ export default function Header() {
                   <a href="#" class="subHeader inlineBlock textWhite sizeText15">
                     <img src='./images/Icon/user.svg' class="cssSvg" alt='icon user'></img>
                     <a href='#' class="textWhite textBold ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign in </a>
+                    <ul className="subnav">
+                                   <li><a href="/">My Profile</a></li>
+                                   <li><a href="/">My Purchase</a></li>
+                                   <li><a href="/">Log out</a></li>
+                    </ul>
+
                   </a>
                 </li>
               </ul>

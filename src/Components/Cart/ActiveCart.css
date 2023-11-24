@@ -19,7 +19,16 @@
     font-weight: 700;
 }
 .AC-Body{
+    display: flex;
 
+}
+.pctright{
+    width: 20px;
+    
+    
+}
+.formCheckProduct{
+    width: 80%;
 }
 .Productwrapper{
     width: 100%;
@@ -30,12 +39,12 @@
     width: 100%;
 }
 .pctleft{
-    width: 80%;
+    width: 100%;
    
 }
 .pctright{
     width: 20%;
-    flex:1;
+    
 }
 .cproduct{
     display: flex;
