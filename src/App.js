@@ -6,11 +6,13 @@ import Profile from './Components/Profile/Profile';
 import Item from './Components/Items/Item'
 import ImageSlider from './Components/Product/ProductSlider';
 import ProductItem from './Components/Product/ProductItem';
-import ActiveCart from './Components/Cart/ActiveCart'
+import ActiveCart from './Components/Cart/ActiveCart';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div className="App">
-      <ActiveCart/>
+      <Header/>
+      
     </div>
   );
 }
