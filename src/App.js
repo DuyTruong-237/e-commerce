@@ -9,10 +9,11 @@ import ProductItem from './Components/Product/ProductItem';
 import Home from './Screens/Home/Home'
 import ActiveCart from './Components/Cart/ActiveCart';
 import Footer from './Components/Footer/Footer';
+import Checkout from './Components/Checkout/Checkout';
 function App() {
   return (
     <div className="App">
-      <ActiveCart/>
+      <Checkout/>
       
     </div>
   );
