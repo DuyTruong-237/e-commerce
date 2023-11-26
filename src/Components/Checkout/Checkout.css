@@ -3,3 +3,19 @@
 .quantityItems{
  font-weight: 500;
 }
+.CheckoutWrapperContent{
+display: flex;
+}
+.formCheckout{
+width: 100%;
+}
+.CheckoutLeft{
+width: 80%;
+}
+.CheckoutRight{
+   width: 20%; 
+   margin-left: 20px;
+}
+.bgWhite{
+ background-color: white;
+}
