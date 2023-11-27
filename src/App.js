@@ -4,14 +4,17 @@ import Header from './Components/Header/Header';
 import Categories from './Components/Categories/Categories';
 import Profile from './Components/Profile/Profile';
 import Item from './Components/Items/Item'
-import BriefShop from './Components/BriefShop/BriefShop';
+import ImageSlider from './Components/Product/ProductSlider';
+import ProductItem from './Components/Product/ProductItem';
 import Home from './Screens/Home/Home'
-import itemDes from './Components/Item-Description/ItemDes'
-
+import ActiveCart from './Components/Cart/ActiveCart';
+import Footer from './Components/Footer/Footer';
+import Checkout from './Components/Checkout/Checkout';
 function App() {
   return (
     <div className="App">
-      <itemDes/>
+      <Checkout/>
+      
     </div>
   );
 }
