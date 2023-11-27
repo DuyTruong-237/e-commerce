@@ -1,0 +1,65 @@
+.ProductAdsWrapper{
+ display: flex;
+ margin-top: 10px;
+ 
+ border-bottom: 1px solid rgb(190, 180, 180) ;
+}
+.paFixedLeft{
+    flex: 1;
+}
+.paFixedRight{
+ 
+   flex: 1;
+ margin-left: 10px;
+}
+.pdImgAds{
+    width: 100px;
+    height: 100px;
+}
+.imgWrapper{
+   width: 90%;
+}
+.mglr{
+    margin-left: auto;
+    margin-right: auto;
+}
+.namePdAds{
+    font-size: 12px;
+    height: 30px;
+    font-weight: 400;
+   overflow: hidden;
+    white-space: wrap;}
+.namePdAds:hover{
+overflow: visible;
+}
+    
+.typePd1{
+    color: gray;
+    font-size: 10px;
+    margin-bottom: 0px;
+    
+}
+.namePdAd{
+    color: black;
+}
+.pricepd{
+    font-size: 16px;
+    color: rgb(231, 61, 92);
+    white-space: nowrap;
+    font-weight: 600 ;
+}
+.btn-add1{
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-weight: 700;
+    background-color:rgb(231, 61, 92) ;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.cssbtn-add{
+    font-size: 10px;
+    color: white;
+    line-height: 20px;
+}

@@ -1,0 +1,58 @@
+.coAddress{
+ padding: 20px;
+ 
+}
+.arow{
+    width: 100%;
+}
+.coFirstInfo{
+}
+
+.titleInfo{
+    color: red;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.addressformWrapper{
+ border: 0.1rem solid rgb(201, 198, 198);
+ border-radius: 15px;
+
+}
+.addressform{
+width: 60vw;
+padding: 20px;
+}
+.css_input{
+    border: 0.3px solid rgb(201, 198, 198);
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px;
+}
+.mglr{
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-form{
+    font-size: 18px;
+    color: rgb(149, 149, 160);
+    font-weight: 700;
+}
+.slAdrress{
+    display: flex;
+}
+.mgl{
+    margin-left: 5px;
+}
+.btnSubmit{
+    width: fit-content;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    background-color: rgb(231, 61, 92);
+}
+.marginBot30{
+    margin-bottom: 30px;
+}

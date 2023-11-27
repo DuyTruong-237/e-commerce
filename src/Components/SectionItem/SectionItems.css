@@ -1,0 +1,247 @@
+.stProductCart{
+    position: relative;
+    padding-bottom: 1px;
+}
+
+
+.inforItemWrap{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 3px;
+}
+.cbFirst{
+    padding: 0 12px 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 58px;
+    box-sizing: border-box;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.stardust-checkbox__input {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.productinfo{
+    display: flex;
+    width: 29.03811%;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+}
+.pdi1{
+    display: flex;
+}
+.pdi2{
+margin-top: 5px;
+}
+.pdi2_1{
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    display: block;
+    margin-bottom: 5px;
+    max-height: 32px;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 16px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.img_pdi{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.typepd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    padding-left: 20px;
+    height: 80px;
+}
+.typepdfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    flex: 1;
+}
+.ppbtnwrap{
+    flex: 1;
+    color: rgba(0,0,0,.54);
+    display: flex;
+    flex-direction: column;
+    font-size: .875rem;
+    margin-right: 10px;
+    background: none;
+    padding: 0;
+    border: 0;
+}
+.ppvari{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: left;
+}
+.ppvariicon{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    background: none;
+    padding: 0;
+    border-top: 5px solid rgba(0,0,0,.54);
+    border-bottom: 0;
+    transition: transform .1s cubic-bezier(.4,0,.6,1);
+    transform: rotate(0);
+    margin: 0 0 0 10px;
+}
+.ppopt{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    margin-top: 5px;
+}
+.pppricewrap{
+    flex-direction: column;
+    width: 15.88022%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ppprice{
+    margin-right: 10px;
+}
+.oldprice1{
+    color: rgba(0,0,0,.54);
+    text-decoration: line-through;
+}
+.pp-svg-icon{
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    position: relative;
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantitywrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+   width: 116px;
+}
+
+.quantity-input {
+    text-align: center;
+}
+
+
+
+.ppbtnquanty {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .1s cubic-bezier(.4, 0, .6, 1);
+    border: 1px solid rgba(0, 0, 0, .09);
+    border-radius: 2px;
+    background: transparent;
+    color: rgba(0, 0, 0, .8);
+    width: 32px;
+    height: 32px;
+    margin: 0; /* Add this line to remove default margin */
+}
+
+
+.abc{
+    width: 15.4265%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.totalprice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.43557%;
+    color: rgb(231, 61, 92);
+}
+.ppactionwrap {
+    width: 12.70417%;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ppactionwrap1 {
+    flex-direction: column;
+}
+.btntitle{
+    cursor: pointer;
+    background: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ppaction2{
+    z-index: 2;
+    max-width: 100%;
+}
+.pp-button-no-outline{
+    position: relative;
+    overflow: visible;
+    outline: 0;
+    padding: 0.3125rem 0.4375rem;
+    color: rgba(0,0,0,.8);
+    background-color: initial;
+    border: 0;
+}
+.ppbtnnoline{
+    color: rgb(231, 61, 92);
+    font-weight: 400;
+    border: 0.0625rem solid transparent;
+    height: 1.875rem;
+    max-width: 100%;
+}
+.XHOHXQ {
+    margin-left: 0.25rem;
+    width: 0.625rem;
+}
+
+.bdbot{
+    border-bottom: 1px solid rgba(0, 0, 0, .09);
+    margin-bottom: 5px;
+}

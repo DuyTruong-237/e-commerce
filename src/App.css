@@ -1,5 +1,13 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   min-height: 100px;
+  background-color: #EAEDED!important;
 }
 .Header{
   height: 100px;
