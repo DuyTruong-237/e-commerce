@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Screens/Home/Home'
 import Login from './Screens/Login/Login'
 import Profile from './Screens/Profile/Profile';
-import ListItem from './Components/ListItem-Cart/ListItem';
+import MyPurchase from './Screens/MyPurchase/MyPurchase';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/profile" element={<Profile />}/>
-          <Route path="/list" element={<ListItem />}/>
+          <Route path="/purchase" element={<MyPurchase/>}/>
         </Routes>
         
       </div>
