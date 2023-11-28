@@ -1,6 +1,6 @@
 .HE-body{
   
-    background-color: rgba(246, 34, 91, 0.1);
+    background-color: white;
     width: 70%;
     margin:10px auto;
     height: auto;
@@ -8,6 +8,9 @@
     font-size: 1.2rem;
     min-height: 100px;
 }
+.PE-item{
+    margin: auto;
+  }
 .He-content{
     display: flex;
     width: 1005;
@@ -22,6 +25,7 @@
     width: 100%;
 }
 .event-content{
+    margin-left: 30px;
     width: 60%;
 }
 .HE-title{
@@ -32,3 +36,18 @@
     font-weight: 600;
     color: rgb(252, 10, 42);
 }
+.event-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+@media screen and (max-width: 1840px) {
+    .event-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width: 1330px) {
+    .event-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

@@ -15,6 +15,7 @@ export default function ProductItem() {
 
     return (
         <div>
+            
             <div className="containerP">
                 
                 <div className="PITop">
@@ -22,7 +23,7 @@ export default function ProductItem() {
                         <ProductSlider />
                     </div>
                 </div>
-              
+                <a href='/inforproduct'>
                 <div className="PIBot">
                     <div className="productName">
                         {/* Truyền giá trị thông qua props */}
@@ -48,7 +49,10 @@ export default function ProductItem() {
 
                    
                 </div>
+                </a>
             </div>
+            
+            
 
         </div>
     );

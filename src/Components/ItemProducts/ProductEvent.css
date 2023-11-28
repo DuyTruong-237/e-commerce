@@ -1,0 +1,33 @@
+.PE-img{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-left:15px ;
+    justify-content: center;
+    align-items: center;
+}
+.PE-container{
+    background-color: white;
+    width: 180px;
+    height: 300px;
+}
+
+.shopnow{
+    width: 100%;
+    text-align: center;
+    color: rgb(218, 6, 6);
+    font-weight: 500;
+}
+.PE-logo{
+    width: 100%;
+}
+.PE-sale{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+.PE-newicon{
+    margin-left: 10px;
+    width: 30px;
+}

@@ -3,6 +3,9 @@ import qc1 from "./nhy1.jpg"
 import qc2 from "./nhy2.jpg"
 import qc3 from "./nhy3.jpg"
 import "./HomeEvent.css"
+import ItemProducts from '../ItemProducts/ItemProducts'
+import ProductItem from '../Product/ProductItem'
+import ProductEvent from '../ItemProducts/ProductEvent'
 
 const images = [
   qc1,
@@ -31,6 +34,7 @@ export default function HomeEvent() {
   }, []);
   return (
     <div className="HE-body">
+      
         <div className='HE-title'> PAMPAM  EVENT</div>
         <div className='br-line'></div>
 
@@ -40,7 +44,20 @@ export default function HomeEvent() {
     
         </div>
         <div className='event-content'>
-            dssfdfgds
+           <ProductEvent/>
+           <ProductEvent pimg="https://png.pngtree.com/png-clipart/20230511/original/pngtree-3d-cosmetics-delicate-color-beautiful-png-image_9157486.png"/>
+           <ProductEvent/>
+
+           <ProductEvent/>
+
+           <ProductEvent/>
+
+           <ProductEvent/>
+
+           <ProductEvent/>
+
+           <ProductEvent/>
+
 
         </div>
         </div>
