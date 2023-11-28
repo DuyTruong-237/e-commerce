@@ -1,0 +1,110 @@
+.briefInfo_Wrapper {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin: 0px 150px;
+    padding: 10px 0px;
+}
+
+.briefInfo_shopAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+.briefInfo_imgAvatar {
+    width: 78px;
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    margin: 20px 0px;
+}
+
+.briefInfo_mallTag {
+    position: absolute;
+    width: 64px;
+    height: 16px;
+    z-index: 1;
+    margin-top: 85px;
+    top: 0;
+}
+
+.briefInfo_shopName{
+    margin-top: 10px;
+    text-align: left;
+    border-right: 1px solid rgba(0,0,0,.05);
+    padding-right: 10px;
+}
+
+.briefInfo_shopName > span {
+    font-weight: 600;
+}
+
+.onlineStatus {
+    font-size: .875rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.54);
+}
+
+.connectShop_Wrapper{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.direct_Btn {
+    border: 1px solid #FF3557;
+    padding: 5px 10px;
+    color: #FF3557;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(255, 225, 230);
+}
+
+.direct_Btn > img{
+    width: 14px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.connectProfile_Btn > img {
+    width: 14px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.connectProfile_Btn {
+    padding: 5px 10px;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+}
+.ratingLabel {
+    color: rgba(0,0,0,.4);
+}
+
+.shopRating_Wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1.25rem 3.125rem;
+    gap: 1.25rem 3.125rem
+    ;
+    margin: 0px 10px;
+    width: 60%;
+}
+
+.shopRating{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.shopRating > span {
+    color: #FF3557;
+    text-align: right;
+}

@@ -1,0 +1,75 @@
+.listItem-Wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.shopPart-Wrapper{
+    width: 980px;
+    
+}
+
+.pdShopPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0px 50px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.shopPart-Container {
+    display: flex;
+    align-items: center;
+}
+
+.preferShop {
+    background-color: rgb(255, 53, 87);
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    margin: 5px 5px 0px 0px;
+    text-align: center;
+    width: 70px;
+}
+
+.nameShop {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.chatBtn-Wrapper {
+    background-color: rgb(255, 53, 87);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1px 5px;
+    margin: 5px 5px 0px;
+}
+
+.chatBtn {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.connectProfile_Btn {
+    margin-top: 5px;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.connectProfile_Btn > img {
+    width: 14px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.ratingPurchase {
+    margin-top: 10px;
+    padding: 5px 0px;
+    font-weight: 500;
+    color: rgb(255, 53, 87);
+}

@@ -72,7 +72,7 @@
 .priceItem {
     font-size: 1.875rem;
     font-weight: 500;
-    color: rgb(255, 53, 87);
+    color: #FF3557;
     margin-top: 30px;
     padding: 15px 20px;
     background-color: #fafafa;
@@ -90,7 +90,7 @@
 }
 .voucherTicket {
     background-color: #f5cbd1;
-    color: rgb(255, 53, 87);
+    color: #FF3557;
     margin-left: 30px;
     padding: 2px;
 }

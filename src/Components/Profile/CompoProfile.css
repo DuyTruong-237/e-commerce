@@ -36,6 +36,7 @@ a{
     display: block;
     width: 180px;
     flex-shrink: 0;
+    margin-left: 20px;
 }
 .navLUser{
     display: flex;
@@ -304,11 +305,34 @@ tr{
     cursor: pointer;
     padding: 16px 12px;
 }
-.radioGender{
- margin-right: 10px;
+
+.stardust-radio-button {
+    margin-right: 8px;
+    flex-shrink: 0;
+    position: relative;
+    width: 18px;
+    height: 18px;
 }
-
-
+.stardust-radio__content {
+    cursor: pointer;
+}
+.stardust-radio-button__outer-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 2px solid rgba(0,0,0,.26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.stardust-radio-button__outer-circle>.stardust-radio-button__inner-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color:  rgb(231, 61, 92);
+    opacity: 0;
+}
 .btn-solid-primary {
     color: #fff;
     position: relative;
@@ -418,5 +442,4 @@ input {
     background-color: rgb(231, 61, 92);
     border-radius: 10px;
     text-align: center;
-   
 }
