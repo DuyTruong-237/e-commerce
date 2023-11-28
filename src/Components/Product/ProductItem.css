@@ -98,3 +98,9 @@ color: black;
 .iconlove{
     display: inline;
 }
+@media screen and (max-width: 923px) {
+    .containerP{
+        width: 150px;
+        height: 230px;
+    }
+}

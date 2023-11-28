@@ -16,13 +16,13 @@ export default function ProductItem() {
     return (
         <div>
             <div className="containerP">
-                {/* TOP PRODUCT ITEM */}
+                
                 <div className="PITop">
                     <div className="sliderWrapper">
                         <ProductSlider />
                     </div>
                 </div>
-                {/* BOT  PRODUCT ITEM */}
+              
                 <div className="PIBot">
                     <div className="productName">
                         {/* Truyền giá trị thông qua props */}

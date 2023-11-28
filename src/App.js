@@ -10,10 +10,12 @@ import Home from './Screens/Home/Home'
 import ActiveCart from './Components/Cart/ActiveCart';
 import Footer from './Components/Footer/Footer';
 import Checkout from './Components/Checkout/Checkout';
+import DailyDiscover from './Components/DailyDiscover/DailyDiscover';
+import Login from './Screens/Login/Login'
 function App() {
   return (
     <div className="App">
-      <Checkout/>
+      <Home />
       
     </div>
   );

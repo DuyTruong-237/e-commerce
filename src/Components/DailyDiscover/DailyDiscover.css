@@ -1,0 +1,55 @@
+.DD-body{
+  
+    background-color: rgba(246, 34, 91, 0.1);
+    width: 70%;
+    margin:10px auto;
+    height: auto;
+    padding: 30px 1%;
+    font-size: 1.2rem;
+    min-height: 100px;
+}
+.dd-content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: auto;
+  
+
+}
+.dd-item{
+    margin: auto;
+}
+.dd-title{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(252, 10, 42);
+
+}
+@media screen and (max-width: 1840px) {
+    .dd-content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .dd-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 923px) {
+    .dd-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .DD-body{
+      width: 100%;
+      
+      height: auto;
+      
+      font-size: 1.2rem;
+      min-height: 100px;
+  }
+  }
