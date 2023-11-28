@@ -1,7 +1,7 @@
 .image-slider {
     position: relative;
     width: 100%;
-    max-width: 600px; /* Điều chỉnh kích thước tối đa của ảnh */
+    max-width: 300px; 
     margin: auto;
   }
   
@@ -12,14 +12,7 @@
     object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
   }
   
-  .image-slider > button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-  }
+ 
+
   
  
