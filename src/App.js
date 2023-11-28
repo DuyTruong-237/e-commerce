@@ -10,11 +10,13 @@ import Home from './Screens/Home/Home'
 import ActiveCart from './Components/Cart/ActiveCart';
 import Footer from './Components/Footer/Footer';
 import Checkout from './Components/Checkout/Checkout';
-import Slider from './Components/Slider/Slider'
+import Slider from './Components/Slider/Slider';
+import BrandAds from './Components/Brand/BrandAds';
 function App() {
   return (
     <div className="App">
-      <Slider/>
+      <BrandAds >
+      <div> abc</div></BrandAds>
       
     </div>
   );
