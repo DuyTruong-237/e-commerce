@@ -10,10 +10,11 @@ import Home from './Screens/Home/Home'
 import ActiveCart from './Components/Cart/ActiveCart';
 import Footer from './Components/Footer/Footer';
 import Checkout from './Components/Checkout/Checkout';
+import Slider from './Components/Slider/Slider'
 function App() {
   return (
     <div className="App">
-      <ProductItem/>
+      <Slider/>
       
     </div>
   );
