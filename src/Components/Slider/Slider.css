@@ -35,7 +35,7 @@
 .sli-items{
     margin-top: 10px;
     display: block;
-    width: 200px;
+    width: 100%;
     height: 100px;
     display: flex;
    
@@ -47,7 +47,7 @@
 .sli-item-img{
     width: 100%;
     height: 55px;
-    border: 1px solid rgb(249, 2, 35);
+    border: 1px solid black;
     border-radius: 30px;
 }
 
