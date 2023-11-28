@@ -1,21 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Components/Header/Header';
-import Categories from './Components/Categories/Categories';
-import Profile from './Components/Profile/Profile';
-import Item from './Components/Items/Item'
-import ImageSlider from './Components/Product/ProductSlider';
-import ProductItem from './Components/Product/ProductItem';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Screens/Home/Home'
-import ActiveCart from './Components/Cart/ActiveCart';
-import Footer from './Components/Footer/Footer';
-import Checkout from './Components/Checkout/Checkout';
+import Login from './Screens/Login/Login'
+import Profile from './Screens/Profile/Profile';
+import ListItem from './Components/ListItem-Cart/ListItem';
+
 function App() {
   return (
-    <div className="App">
-      <Checkout/>
-      
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/profile" element={<Profile />}/>
+          <Route path="/list" element={<ListItem />}/>
+        </Routes>
+        
+      </div>
+    </Router>
   );
 }
 

@@ -36,6 +36,7 @@ a{
     display: block;
     width: 180px;
     flex-shrink: 0;
+    margin-left: 20px;
 }
 .navLUser{
     display: flex;
@@ -440,5 +441,5 @@ input {
     height: 40px;
     background-color: rgb(231, 61, 92);
     border-radius: 10px;
-   
+    text-align: center;
 }

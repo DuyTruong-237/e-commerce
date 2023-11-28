@@ -1,14 +1,80 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './ItemDes.css'
+import rightBtn from '../Item-Description/right.png'
+import editBtn from '../Item-Description/edit-button.png'
+import { Link, useNavigate } from 'react-router-dom';
 
-export default function  () {
+export default function ItemDes() {
+  const navigate = useNavigate();
+  const [isEditing, setIsEditing] = useState(false);
+  const [textContent, setTextContent] = useState();
+
+  const handleNavigateToHome = (e) => {
+    e.preventDefault();
+    navigate('/Home');
+  };
+
+  const handleEditButtonClick = () => {
+    setIsEditing(!isEditing);
+  };
+
+  const handleSaveButtonClick = () => {
+    setIsEditing(false);
+  };
+
+  const handleTextareaChange = (e) => {
+    setTextContent(e.target.value);
+  };
+
   return (
     <div className='itemDescription-Wrapper'>
-        <div className='itemDes-Title'>
-            
-        </div>
-        <div className='itemDes-Content'>
+      <div className='itemDes-Title'>
+        <span>Mô Tả Sản Phẩm</span>
 
+      </div>
+      <div className='itemDes-Detail'>
+        <div className='itemCategory'>
+          <div className='itemCategory-Title'>
+            <span>Danh Mục</span>
+            <a href="#" onClick={handleNavigateToHome}>
+              PamPam
+            </a>
+            <img src={rightBtn} alt="" />
+            <a href="#">
+              Điện thoại
+            </a>
+            <img src={rightBtn} alt="" />
+            <a href="#">
+              Apple
+            </a>
+          </div>
+
+          <div className='itemCategory-Title'>
+            <span>Thương Hiệu</span>
+            <a href="#">
+              Apple
+            </a>
+          </div>
+          <div className='itemCategory-Title'>
+            <span>Kho Hàng</span>
+            <span>450</span>
+          </div>
         </div>
+      </div>
+      <div className='itemDes-Content'>
+        {isEditing ? (
+          <div className='itemDes-ContentScript'>
+            <textarea value={textContent} onChange={handleTextareaChange}/>
+            <button className='saveItemDesContent-Btn' onClick={handleSaveButtonClick}>Save</button>
+          </div>
+        ) : (
+          <pre>{textContent || 'Enter your description here'}</pre>
+        )}
+        <button className='editItemDesContent-Btn' onClick={handleEditButtonClick}>
+          <img src={editBtn} alt="Edit" />
+        </button>
+
+      </div>
     </div>
-  )
+  );
 }

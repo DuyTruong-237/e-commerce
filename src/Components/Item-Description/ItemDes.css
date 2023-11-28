@@ -1,0 +1,85 @@
+.itemDescription-Wrapper{
+   margin-left: 150px;
+   padding: 50px;
+}
+
+.itemDes-Title{
+    display: flex;
+    
+}
+
+.itemDes-Title > span{
+    background-color: rgba(0,0,0,.02);
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.itemDes-Detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+    color: gray;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.itemCategory {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemCategory-Title > img{
+    width: 20px;
+}
+
+.itemCategory-Title {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.itemCategory-Title > span{
+    width: 8.75rem;
+    padding-right: .75rem;
+
+}
+
+.itemDes-Content {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.itemDes-ContentScript{
+    width: 100%;
+}
+
+.itemDes-ContentScript > textarea{
+    width: 100%;
+}
+
+.editItemDesContent-Btn{
+    border: none;
+    background-color: white;
+    margin-bottom: auto;
+}
+
+.editItemDesContent-Btn >img {
+    width: 20px;
+}
+
+.saveItemDesContent-Btn {
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(255, 53, 87);
+    color: white;
+    border: none;
+}
+
+.saveItemDesContent-Btn:hover {
+    opacity: 0.5;
+}
+
