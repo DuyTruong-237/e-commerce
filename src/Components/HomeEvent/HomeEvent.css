@@ -1,0 +1,53 @@
+.HE-body{
+  
+    background-color: white;
+    width: 70%;
+    margin:10px auto;
+    height: auto;
+    padding: 30px 1%;
+    font-size: 1.2rem;
+    min-height: 100px;
+}
+.PE-item{
+    margin: auto;
+  }
+.He-content{
+    display: flex;
+    width: 1005;
+
+}
+.He-slider{
+    width: 35%;
+    height: 600px;
+}
+.He-sli-img{
+    height: 600px;
+    width: 100%;
+}
+.event-content{
+    margin-left: 30px;
+    width: 60%;
+}
+.HE-title{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(252, 10, 42);
+}
+.event-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+@media screen and (max-width: 1840px) {
+    .event-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width: 1330px) {
+    .event-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

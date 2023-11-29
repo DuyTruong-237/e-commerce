@@ -1,0 +1,62 @@
+.sc-dd-body{
+
+}
+.sdd-cotainer{
+    width: 70%;
+    margin: auto;
+}
+.sdd-title{
+    margin-top: 50px;
+}
+.sdd-content{
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+.sdd-line{
+    width: 100%;
+    height: 2px;
+    background-color:rgb(252, 10, 42) ;
+}
+.sdd-title-name{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(252, 10, 42);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    position: relative;
+    top:-25px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+@media screen and (max-width: 1840px) {
+    .sdd-content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .sdd-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 923px) {
+    .sdd-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .DD-body{
+      width: 100%;
+      
+      height: auto;
+      
+      font-size: 1.2rem;
+      min-height: 100px;
+  }
+  }

@@ -81,9 +81,9 @@ export default function Login() {
             </div>
             <div className='lg-click'>
                 <a className='lg-a'>Forgot password</a>
-                <button className='lg-btn'>
+                <a href='/' className='lg-btn'>
                     Login
-                </button>
+                </a>
             </div>
             
             </div>

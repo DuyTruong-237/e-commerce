@@ -37,9 +37,9 @@ export default function Header() {
                 <li >
                   <a href="#" class="subHeader inlineBlock textWhite sizeText15">
                     <img src='./images/Icon/user.svg' class="cssSvg" alt='icon user'></img>
-                    <a href='#' class="textWhite textBold ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign in </a>
+                    <a href='/login' class="textWhite textBold ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign in </a>
                     <ul className="subnav">
-                                   <li><a href="/">My Profile</a></li>
+                                   <li><a href="/profile">My Profile</a></li>
                                    <li><a href="/">My Purchase</a></li>
                                    <li><a href="/">Log out</a></li>
                     </ul>
@@ -60,7 +60,7 @@ export default function Header() {
                 </div>
               </div>
               <div class="headerCart">
-                  <img src='./images/Icon/shoppingcart.svg' class="cssCart"></img>
+                  <a href='./cart'><img src='./images/Icon/shoppingcart.svg' class="cssCart"></img></a>
               </div>
             </div>
           </div>

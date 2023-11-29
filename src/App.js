@@ -3,7 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Screens/Home/Home'
 import Login from './Screens/Login/Login'
 import Profile from './Screens/Profile/Profile';
-import MyPurchase from './Screens/MyPurchase/MyPurchase';
+import ListItem from './Components/ListItem-Cart/ListItem';
+import ProductItem from './Components/Product/ProductItem';
+import ItemProducts from './Components/ItemProducts/ItemProducts';
+import ActiveCart from './Components/Cart/ActiveCart'
+import BuyItem from './Components/Items/Item'
+import DailyDiscover from './Screens/DailyDiscover/DailyDiscover';
+import SearchResult from './Screens/SearchResult/SearchResult';
+import "./App.css"
 
 function App() {
   return (
@@ -13,7 +20,15 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/profile" element={<Profile />}/>
-          <Route path="/purchase" element={<MyPurchase/>}/>
+          <Route path="/list" element={<ListItem />}/>
+          <Route path="/cart" element={<ActiveCart />}/>
+          <Route path="/inforproduct" element={<BuyItem />}/>
+          <Route path="/SearchResult" element={<SearchResult />}/>
+
+          <Route path="/discover" element={<DailyDiscover />}/>
+
+
+
         </Routes>
         
       </div>

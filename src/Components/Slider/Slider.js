@@ -7,6 +7,10 @@ import qc4 from "./qc4.jpg"
 import qc5 from "./qc5.jpg"
 import qc6 from "./qc6.jpg"
 import qc7 from "./qc7.jpg"
+import img1 from "./coupon.svg"
+import img2 from "./live.svg"
+import img3 from "./free-shipping.svg"
+import img4 from "./dollar.svg"
 const images = [
   qc1,
   qc2,
@@ -15,10 +19,6 @@ const images = [
   qc5,
   qc6,
   qc7,
-  
-  
-  
- 
   
 ];
 
@@ -48,21 +48,21 @@ function Slider() {
       <img className='sli2-img' src={qc1} alt="Slideshow" />
       <div className='sli-items'>
         <div className='sli-item'>
-            <img className='sli-item-img'/>
+            <img className='sli-item-img' src={img1}/>
     
             <div className='sli-item-name' >Voucher</div>
         </div>
         <div className='sli-item'>
-            <img className='sli-item-img'/>
-            <div className='sli-item-name'>Partner Promos</div>
+            <img className='sli-item-img' src={img2}/>
+            <div className='sli-item-name'>Live</div>
         </div>
         <div className='sli-item'>
-            <img className='sli-item-img'/>
+            <img className='sli-item-img'src={img3}/>
             <div className='sli-item-name'>Free Shipping
 </div>
         </div>
         <div className='sli-item'>
-            <img className='sli-item-img'/>
+            <img className='sli-item-img' src={img4}/>
             <div className='sli-item-name'>Coins Rewards</div>
         </div>
       </div>

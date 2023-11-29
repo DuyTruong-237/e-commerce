@@ -47,12 +47,12 @@
 .sli-item-img{
     width: 100%;
     height: 55px;
-    border: 1px solid rgb(249, 2, 35);
+    border: 1px solid black;
     border-radius: 30px;
 }
 
 .sli-item-name{
-    font-size: 20px;
+    font-size: 15px;
     height: 45px;
     text-align: center;
 }
