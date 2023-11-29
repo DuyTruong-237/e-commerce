@@ -39,7 +39,7 @@ export default function Header() {
                     <img src='./images/Icon/user.svg' class="cssSvg" alt='icon user'></img>
                     <a href='/login' class="textWhite textBold ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign in </a>
                     <ul className="subnav">
-                                   <li><a href="/">My Profile</a></li>
+                                   <li><a href="/profile">My Profile</a></li>
                                    <li><a href="/">My Purchase</a></li>
                                    <li><a href="/">Log out</a></li>
                     </ul>

@@ -8,6 +8,8 @@ import ProductItem from './Components/Product/ProductItem';
 import ItemProducts from './Components/ItemProducts/ItemProducts';
 import ActiveCart from './Components/Cart/ActiveCart'
 import BuyItem from './Components/Items/Item'
+import DailyDiscover from './Screens/DailyDiscover/DailyDiscover';
+import SearchResult from './Screens/SearchResult/SearchResult';
 import "./App.css"
 
 function App() {
@@ -21,6 +23,10 @@ function App() {
           <Route path="/list" element={<ListItem />}/>
           <Route path="/cart" element={<ActiveCart />}/>
           <Route path="/inforproduct" element={<BuyItem />}/>
+          <Route path="/SearchResult" element={<SearchResult />}/>
+
+          <Route path="/discover" element={<DailyDiscover />}/>
+
 
 
         </Routes>
