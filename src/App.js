@@ -7,7 +7,7 @@ import ListItem from './Components/ListItem-Cart/ListItem';
 import ProductItem from './Components/Product/ProductItem';
 import ItemProducts from './Components/ItemProducts/ItemProducts';
 import ActiveCart from './Components/Cart/ActiveCart'
-import BuyItem from './Components/Items/Item'
+import BuyItem from './Screens/InfoProduct/InfoProduct'
 import DailyDiscover from './Screens/DailyDiscover/DailyDiscover';
 import SearchResult from './Screens/SearchResult/SearchResult';
 import "./App.css"
@@ -24,7 +24,6 @@ function App() {
           <Route path="/cart" element={<ActiveCart />}/>
           <Route path="/inforproduct" element={<BuyItem />}/>
           <Route path="/SearchResult" element={<SearchResult />}/>
-
           <Route path="/discover" element={<DailyDiscover />}/>
 
 

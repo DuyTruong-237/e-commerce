@@ -1,6 +1,8 @@
 .itemDescription-Wrapper{
    margin-left: 150px;
-   padding: 50px;
+   width: 90%;
+   padding: 20px;
+   background-color: white;
 }
 
 .itemDes-Title{
