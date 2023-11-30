@@ -53,7 +53,8 @@ export default function Header() {
                 <div class="wrap">
                   <div class="search">
                     <input type="text" class="searchTerm" placeholder="What are you looking for?" />
-                    <a type="submit" class="searchButton">
+                    <a type="submit"
+                    href='./SearchResult' class="searchButton">
                       <img class="cssImgSearch" src='./images/Icon/search.svg'></img>
                     </a>
                   </div>

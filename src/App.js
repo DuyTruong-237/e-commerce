@@ -10,6 +10,7 @@ import ActiveCart from './Components/Cart/ActiveCart'
 import BuyItem from './Components/Items/Item'
 import DailyDiscover from './Screens/DailyDiscover/DailyDiscover';
 import SearchResult from './Screens/SearchResult/SearchResult';
+import Shop from './Screens/Shop/Shop';
 import "./App.css"
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
           <Route path="/SearchResult" element={<SearchResult />}/>
 
           <Route path="/discover" element={<DailyDiscover />}/>
+          <Route path="/shop" element={<Shop />}/>
+
 
 
 
