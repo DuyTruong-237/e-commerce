@@ -1,0 +1,78 @@
+.ShopCart-body{
+    width: 100%;
+    padding-top:5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    background: rgba(253, 222, 226, 0.7);
+}
+.SC-avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+}
+.SC-item-icon{
+    margin-bottom: 10px;
+    width: 30px;
+    margin-right: 20px;
+}
+.SC-imga{
+    width: 40%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to top, rgb(252, 10, 42),white); */
+    background: linear-gradient(to top, rgb(234, 22, 51), rgb(255, 221, 225));
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.SC-item-info{
+    margin-left: 20px;
+}
+.SC-content-item{
+    margin-left: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.SC-left-content{
+    width: 30%;
+}
+.SC-right-content{
+    width: 30%;
+   
+}
+.SC-button{
+    font-size: 1.2rem;
+}
+.SC-nameshop{
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+
+    justify-content: center;
+    color: rgb(234, 22, 51);
+}
+.SC-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.SC-chaticon{
+    margin-right: 5px;
+    width: 30px;
+}
+.Sc-button{
+    height: 40px;
+    font-size: 1.5rem;
+    width: 150px;
+    text-align: center;
+    border: 1px solid rgb(234, 22, 51);
+}
