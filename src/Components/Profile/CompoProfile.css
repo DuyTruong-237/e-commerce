@@ -443,3 +443,13 @@ input {
     border-radius: 10px;
     text-align: center;
 }
+
+.DlL0zX:hover {
+    cursor: pointer;
+    color: rgb(231, 61, 92);
+}
+
+.editUser:hover {
+    cursor: pointer;
+    color: rgb(231, 61, 92);
+}

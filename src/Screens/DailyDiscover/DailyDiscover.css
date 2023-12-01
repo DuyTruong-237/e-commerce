@@ -81,7 +81,7 @@
   }
   @media screen and (max-width: 1095px) {
     .sdd-content {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
     .sdd-container{
       width: 100%;
@@ -94,7 +94,7 @@
   }
   @media screen and (max-width: 850px) {
     .sdd-content {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     .sdd-container{
       width: 100%;

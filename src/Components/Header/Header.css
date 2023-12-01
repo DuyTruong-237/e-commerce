@@ -23,19 +23,18 @@
 .headerMenu {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
+    align-items: flex-end;
 }
 
 .subMenuTop {
-    height: 40px;
+    width: 80%;
     text-align: end;
     margin-top: 10px;
-
-
 }
 
 .navMenutop {
-    margin-right: 90px;
+    margin-right: 20px;
 }
 
 .navMenutop li {
@@ -115,7 +114,7 @@ a {
 
 .headerDetails,
 .width90 {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 

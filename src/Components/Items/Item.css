@@ -66,8 +66,8 @@
 
 .itemName{
     margin-top: 20px;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
     line-height: 1.5;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .ratingStarIcon {
-    width: 28px;
+    width: 20px;
     margin: 15px 5px 15px 0px;
 }
 
