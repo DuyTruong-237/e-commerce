@@ -11,6 +11,16 @@ export default function DailyDiscover() {
         <div className="dd-content">
           <div className="dd-item"><ProductItem /></div>
           <div className="dd-item"><ProductItem /></div>
+
+          <div className="dd-item"><ProductItem /></div>
+
+          <div className="dd-item"><ProductItem /></div>
+
+          <div className="dd-item"><ProductItem /></div>
+
+          <div className="dd-item"><ProductItem /></div>
+
+          <div className="dd-item"><ProductItem /></div>
           <div className="dd-item"><ProductItem /></div>
           <div className="dd-item"><ProductItem /></div>
           <div className="dd-item"><ProductItem /></div>
@@ -26,6 +36,7 @@ export default function DailyDiscover() {
         
         
         </div>
+        <div className="dd-btn"><a href="./discover">SHOW MORE</a></div>
     </div>
   )
 }

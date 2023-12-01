@@ -1,36 +1,30 @@
-.DD-body{
-  
-    background-color: rgba(246, 34, 91, 0.1);
-    width: 70%;
-    margin:10px auto;
-    height: auto;
-    padding: 30px 1%;
-    font-size: 1.2rem;
-    min-height: 100px;
+.sc-sdd-container{
+
 }
-.dd-content{
+.sdd-container{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+}
+.sdd-title{
+    margin-top: 50px;
+}
+.sdd-content{
+    
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
-    margin: auto;
-  
-
 }
-.dd-item{
-    margin: auto;
+.sdd-content-items{
+  margin: auto;
 }
-
-.dd-title{
+.sdd-line{
     width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(252, 10, 42);
-
+    height: 2px;
+    background-color:rgb(252, 10, 42) ;
 }
-.dd-btn{
-  width: 250px;
+.sdd-title-name{
+    width: 250px;
     height: 50px;
     background-color: rgb(252, 10, 42);
     font-size: 1.6rem;
@@ -39,30 +33,31 @@
     color: white;
     text-transform: uppercase;
     margin: auto;
+    position: relative;
     top:-25px;
     text-align: center;
-    margin-top: 50px;
     border-radius: 5px;
+
 }
 @media screen and (max-width: 1840px) {
-  .DD-body{
+  .sdd-container{
     width: 90%;
     margin: auto;
 }
   }
   
   @media screen and (max-width: 1430px) {
-    .DD-body{
+    .sdd-container{
       width: 95%;
       margin: auto;
   }
   }
   
   @media screen and (max-width: 1350px) {
-    .dd-content {
+    .sdd-content {
       grid-template-columns: repeat(6, 1fr);
     }
-    .DD-body{
+    .sdd-container{
       width: 100%;
       
       height: auto;
@@ -72,10 +67,10 @@
   }
   }
   @media screen and (max-width: 1285px) {
-    .dd-content {
+    .sdd-content {
       grid-template-columns: repeat(5, 1fr);
     }
-    .DD-body{
+    .sdd-container{
       width: 100%;
       
       height: auto;
@@ -85,10 +80,10 @@
   }
   }
   @media screen and (max-width: 1095px) {
-    .dd-content {
+    .sdd-content {
       grid-template-columns: repeat(4, 1fr);
     }
-    .DD-body{
+    .sdd-container{
       width: 100%;
       
       height: auto;
@@ -97,11 +92,11 @@
       min-height: 100px;
   }
   }
-  @media screen and (max-width: 665px) {
-    .dd-content {
+  @media screen and (max-width: 850px) {
+    .sdd-content {
       grid-template-columns: repeat(3, 1fr);
     }
-    .DD-body{
+    .sdd-container{
       width: 100%;
       
       height: auto;
@@ -110,11 +105,11 @@
       min-height: 100px;
   }
   }
-  @media screen and (max-width: 500px) {
-    .dd-content {
+  @media screen and (max-width: 640px) {
+    .sdd-content {
       grid-template-columns: repeat(2, 1fr);
     }
-    .DD-body{
+    .sdd-container{
       width: 100%;
       
       height: auto;
