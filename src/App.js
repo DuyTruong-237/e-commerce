@@ -11,13 +11,15 @@ import BuyItem from './Components/Items/Item'
 import DailyDiscover from './Screens/DailyDiscover/DailyDiscover';
 import SearchResult from './Screens/SearchResult/SearchResult';
 import Shop from './Screens/Shop/Shop';
+import AddNewProduct from './Components/AddNewProduct/AddNewProduct';
+import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
 import "./App.css"
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/profile" element={<Profile />}/>
@@ -33,7 +35,8 @@ function App() {
 
 
         </Routes>
-        
+         */}
+         <UpdateProduct/>
       </div>
     </Router>
   );
