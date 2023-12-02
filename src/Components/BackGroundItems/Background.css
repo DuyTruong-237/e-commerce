@@ -1,5 +1,5 @@
 .br-body{
-    min-height: 200px;
+    min-height: 350px;
     width: 70%;
     margin: auto;
     padding: 0 1%;
@@ -20,3 +20,80 @@
 .br-chil{
     min-height: 300px;
 }
+@media screen and (max-width: 1840px) {
+    .br-body{
+      width: 90%;
+      margin: auto;
+  }
+    }
+    
+    @media screen and (max-width: 1430px) {
+      .br-body{
+        width: 95%;
+        margin: auto;
+    }
+    }
+    
+    @media screen and (max-width: 1350px) {
+      .br-body {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .br-body{
+        
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 1331px) {
+      
+      .br-body{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 1095px) {
+      .br-body {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .br-body{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 665px) {
+      .br-body {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .br-body{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 500px) {
+      .br-body {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .br-body{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }

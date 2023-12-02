@@ -11,8 +11,10 @@
    
     margin-top: 20px;
     display: grid;
-    grid-template-rows: auto auto; /* Tạo ra hai cột với kích thước bằng nhau */
+    grid-template-rows: auto auto;/* Tạo ra hai cột với kích thước bằng nhau */
+    padding: 20px;
     grid-gap: 20px 30px;
+    overflow-x: auto;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 .cat-item{
@@ -47,3 +49,80 @@
     font-size: 19px;
    
 }
+@media screen and (max-width: 1840px) {
+    .Categories{
+      width: 90%;
+      margin: auto;
+  }
+    }
+    
+    @media screen and (max-width: 1430px) {
+      .Categories{
+        width: 95%;
+        margin: auto;
+    }
+    }
+    
+    @media screen and (max-width: 1350px) {
+      .Categories {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .Categories{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 1331px) {
+      
+      .Categories{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 1095px) {
+      .Categories {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .Categories{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 665px) {
+      .Categories {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .Categories{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
+    @media screen and (max-width: 500px) {
+      .Categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .Categories{
+        width: 100%;
+        
+        height: auto;
+        
+        font-size: 1.2rem;
+        min-height: 100px;
+    }
+    }
