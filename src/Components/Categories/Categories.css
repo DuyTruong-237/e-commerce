@@ -34,9 +34,11 @@
 
 .cat-name{
     color: rgb(242, 221, 224);
-    font-size: 19px;
-   
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
 }
+
 @media screen and (max-width: 1840px) {
     .Categories{
       width: 90%;

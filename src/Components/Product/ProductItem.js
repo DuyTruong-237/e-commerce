@@ -23,7 +23,7 @@ export default function ProductItem(props) {
                         <ProductSlider images={props.images} />
                     </div>
                 </div>
-                <a href='/inforproduct'>
+                <a >
                 <div className="PIBot">
                     <div className="productName">
                         {/* Truyền giá trị thông qua props */}
