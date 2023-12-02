@@ -10,6 +10,7 @@ import ActiveCart from './Components/Cart/ActiveCart'
 import BuyItem from './Screens/InfoProduct/InfoProduct'
 import DailyDiscover from './Screens/DailyDiscover/DailyDiscover';
 import SearchResult from './Screens/SearchResult/SearchResult';
+import MiniCart from './Components/MiniCart/MiniCart';
 import "./App.css"
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
 
         </Routes>
         
-      </div>
+      </div> 
+      
+
     </Router>
   );
 }

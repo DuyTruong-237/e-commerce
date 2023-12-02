@@ -1,7 +1,9 @@
 .br-body{
     min-height: 350px;
     width: 70%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     padding: 0 1%;
     overflow: hidden;
     background-color: rgba(246, 34, 91, 0.1);

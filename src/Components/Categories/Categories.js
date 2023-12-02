@@ -10,12 +10,12 @@ export default function Categories() {
             <div className='cat-items'>
                 <div className='cat-item'>
                     <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
+                        <div className='cat-name'>Pant</div>
                     </div>
                 </div>
                 <div className='cat-item' >
                     <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
+                        <div className='cat-name'>Shirt</div>
                     </div>
                 </div>
                 <div className='cat-item'>
