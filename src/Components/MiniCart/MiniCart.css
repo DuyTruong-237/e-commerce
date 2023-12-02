@@ -1,0 +1,81 @@
+.minicartWrapper{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 80px;
+    z-index: 999;
+    position: relative;
+}
+.miniTitle{
+    font-size: 16px;
+    color : rgb(161, 156, 156) ;
+}
+
+.linkproduct{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+.imgMinicart{
+    width: 30px;
+    height: 30px;
+}
+.miniwrap{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.priceMini{
+    color:red !important;
+}
+.miniwrap {
+    display: flex; 
+   
+}
+.totalmini{
+    border-top: 1px solid rgb(161, 156, 156) ;
+    padding: 10px;
+    display: flex;
+}
+.titletotal{
+    font-size: 16px ;
+    color: rgb(218, 67, 92);
+    font-weight: bold;
+
+}
+
+.linkproduct {
+    text-decoration: none; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.imgMinicart {
+    max-width: 100%; 
+    margin-right: 10px;
+}
+
+.priceMini {
+    font-weight: bold;
+   color:red !important;
+   margin-left: 10px;
+}
+
+  
+  .hover-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+   
+  }
+  
+  .minicartWrapper:hover .hover-content {
+    display: block;
+    /* Các thuộc tính hiển thị khi hover */
+    opacity: 1;
+  }

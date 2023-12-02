@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState, useMemo } from "react";
+import MiniCart from "../MiniCart/MiniCart";
 import "./Header.css"
 
+
 export default function Header() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  const memoizedMiniCart = useMemo(() => <MiniCart />, []);
   return (
     <div >
       <div class="headerWrapper">
@@ -60,9 +72,18 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div class="headerCart">
-                  <a href='./cart'><img src='./images/Icon/shoppingcart.svg' class="cssCart"></img></a>
-              </div>
+              <div
+        className="headerCart"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="./cart">
+          <img src='./images/Icon/shoppingcart.svg' className="cssCart" alt="Cart" />
+        </a>
+      </div>
+
+     {/* Hiển thị MiniCart khi hover */}
+          {isHovered && memoizedMiniCart}
             </div>
           </div>
         </div>
