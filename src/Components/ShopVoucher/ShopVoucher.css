@@ -64,6 +64,11 @@
     border-radius: 5px;
 }
 
+.voucherSave-Btn:hover {
+    background-color: rgb(254, 74, 104);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1300px){
     .shopVoucher-Wrapper{
         margin: 0;

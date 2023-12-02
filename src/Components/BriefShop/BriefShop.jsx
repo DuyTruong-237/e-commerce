@@ -11,7 +11,6 @@ export default function briefShop() {
     <div className='briefInfo_Wrapper'>
       <a href='/shop' className='briefInfo_shopAvatar'>
         <img className='briefInfo_imgAvatar' src={avaShop} alt="" />
-        <img className='briefInfo_mallTag' src={mallTag} alt="" />
       </a>
       <div className='briefInfo_shopName_Wrapper'>
         <div className='briefInfo_shopName'>

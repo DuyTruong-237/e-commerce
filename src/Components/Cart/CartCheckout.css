@@ -51,3 +51,8 @@ form {
     color:  rgb(231, 61, 92) ;
    
 }
+
+.btnCheckout:hover {
+    background-color: rgb(249, 232, 235);
+    cursor: pointer;
+}

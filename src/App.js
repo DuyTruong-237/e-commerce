@@ -14,7 +14,6 @@ import SearchResult from './Screens/SearchResult/SearchResult';
 import ShoppingCart from './Screens/ShoppingCart/ShoppingCart';
 import AddProduct from './Components/AddNewProduct/AddNewProduct';
 import Checkout from './Screens/Checkout/Checkout';
-import MyPurchase from './Screens/MyPurchase/MyPurchase';
 import "./App.css"
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route path="/addpr" element={<AddProduct />}/>
           <Route path="/shop" element={<Shop />}/>
           <Route path="/checkout" element={<Checkout />}/>
-          <Route path="/puschase" element={<MyPurchase />}/>
 
 
 

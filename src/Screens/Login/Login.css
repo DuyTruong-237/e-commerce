@@ -137,3 +137,11 @@ input:focus {
     color:rgb(244, 10, 53) ;
 
 }
+
+.lg-btn:hover{
+    background-color: rgb(254, 74, 104);
+}
+
+.lg-a:hover{
+    cursor: pointer;
+}

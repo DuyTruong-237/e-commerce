@@ -24,7 +24,7 @@ export default function Shop() {
     
         <ShopCart/>
         <div className="Shop-products">
-          <div className="Shop-pr-title">products</div>
+          <div className="Shop-pr-title">Products</div>
           <div className="Shop-PRContent">
             {ProductData.map((item)=>(
                <div className="Shop-PRContent-item"><ProductItem pitem={item} name={item.name} currentPrice={item.price} images={item.image}/></div>

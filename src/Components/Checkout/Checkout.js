@@ -3,7 +3,13 @@ import './Checkout.css'
 import '../Cart/ActiveCart.css'
 import CheckoutInfo from './CheckoutInfo'
 import CartCheckout from "../Cart/CartCheckout";
+import { useNavigate } from 'react-router-dom';
 export default function Checkout(){
+    const navigate = useNavigate();
+
+    const handleOrderPage = () => {
+        navigate('/order');
+    }
     return(
         <div class="checkoutWrapper" id='checkoutWrapperId' >
             <div class="AC-Content mglr">
@@ -17,8 +23,8 @@ export default function Checkout(){
                             <CheckoutInfo/>
                         </div>
                        
-                        <div class="CheckoutRight bgWhite">
-                        <CartCheckout title="Place order"/>
+                        <div class="CheckoutRight bgWhite" onClick={handleOrderPage}>
+                        <CartCheckout title="Place order" />
                         </div>
                         </div>
                         </form>

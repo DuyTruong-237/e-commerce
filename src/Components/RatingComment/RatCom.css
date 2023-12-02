@@ -58,3 +58,37 @@
     border-radius: 2px;
     margin: 10px 10px 0px;
 }
+
+.Comment-Wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+
+.Customer-Avatar{
+    background-color: gray;
+    width: max-content;
+    max-height: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Customer-Name{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.userAvatar {
+    width: 20px;
+}
+
+.ratingStar-Cmt{
+    width: 18px;
+    margin-right: 5px;
+}
+
+.Comment-Content {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}

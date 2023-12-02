@@ -4,11 +4,13 @@ import shopIcon from '../BriefShop/shop.png'
 import brideVoTri from '../ListItem-Cart/screenshot_1701161615.png'
 import nucuoituthien from '../ListItem-Cart/387501171_1649638692106947_6854831053234935170_n.jpg'
 import './ListItem.css'
+import { useNavigate } from 'react-router-dom';
+import { ProductData } from '../../data';
 
 export default function
   () {
   const [totalPrice, setTotalPrice] = useState(0);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const productPrices = document.querySelectorAll('.listProductPrice-Container div');
     let sum = 0;
@@ -18,6 +20,9 @@ export default function
     setTotalPrice(sum);
   }, []);
 
+  const handleConnectShop = () => {
+    navigate('/shop');
+  }
   return (
     <div className='listItem-Wrapper'>
       <div className='shopPart-Wrapper'>
@@ -26,12 +31,12 @@ export default function
             <div className='preferShop'>
               Yêu thích
             </div>
-            <span className='nameShop'> Họa cụ Da Đen</span>
+            <span className='nameShop'>PamPam Shop</span>
             <div className='chatBtn-Wrapper'>
               <img className='chatBtn' src={chatIcon} alt="" />
               Chat
             </div>
-            <div className='connectShop_Btn'>
+            <div className='connectShop_Btn' onClick={handleConnectShop}>
               <img src={shopIcon} alt="" />
               Xem Shop
             </div>
@@ -40,36 +45,22 @@ export default function
             ĐÁNH GIÁ
           </div>
         </div>
-        <div className='listProduct-Wrapper'>
-          <div className='listProductContent-Wrapper'>
-            <div className='listProductImg-Container'>
-              <img className='listProductImg' src={brideVoTri} alt="" />
+        {ProductData.map((item) => (
+          <div className='listProduct-Wrapper'>
+            <div className='listProductContent-Wrapper'>
+              <div className='listProductImg-Container'>
+                <img className='listProductImg' src={item.image[0]} alt="" />
+              </div>
+              <div className='listProductContent-Container'>
+                <div>{item.name}</div>
+                <div>x1</div>
+              </div>
             </div>
-            <div className='listProductContent-Container'>
-              <div>Chú Rể Vô Tri Đắk Nông Lương 50 Trẹo</div>
-              <div>Phân loại hàng: 1m68 20cm</div>
-              <div>x1</div>
-            </div>
-          </div>
-          <div className='listProductPrice-Container'>
-            <div>10000$</div>
-          </div>
-        </div>
-        <div className='listProduct-Wrapper'>
-          <div className='listProductContent-Wrapper'>
-            <div className='listProductImg-Container'>
-              <img className='listProductImg' src={nucuoituthien} alt="" />
-            </div>
-            <div className='listProductContent-Container'>
-              <div>Nụ Cười Từ Thiện Gia Lai</div>
-              <div>Phân loại hàng: 1m48</div>
-              <div>x1</div>
+            <div className='listProductPrice-Container'>
+              <div>{item.price}</div>
             </div>
           </div>
-          <div className='listProductPrice-Container'>
-            <div>10$</div>
-          </div>
-        </div>
+        ))}
       </div>
       <div className='reconnectPart-Wrapper'>
         <div className='totalPrice-Oder' id='totalPrice'>

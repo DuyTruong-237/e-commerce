@@ -1,13 +1,18 @@
 import React, { useState, useMemo } from "react";
 import MiniCart from "../MiniCart/MiniCart";
 import "./Header.css"
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
   const username= localStorage.getItem('username');
+  const navigate = useNavigate();
   const handleMouseEnter = () => {
     setIsHovered(true);
+  };
+
+  const handleBackHomePage = () => {
+    navigate('/');
   };
 
   const handleMouseLeave = () => {
@@ -16,10 +21,10 @@ export default function Header() {
   const memoizedMiniCart = useMemo(() => <div className="header-MiniCart"><MiniCart /></div>, []);
   return (
     <div >
-      <div class="headerWrapper">
+      <div class="headerWrapper" >
         <div class="headerDetails dpFlex">
           <div class="headerLogo">
-            <img class="imgLogo" src='./images/Logo/1.png' alt='logo PAM PAM '></img>
+            <img class="imgLogo" src='./images/Logo/1.png' alt='logo PAM PAM ' onClick={handleBackHomePage}></img>
           </div>
           <div class="headerMenu">
             <div class="subMenuTop">

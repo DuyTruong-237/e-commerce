@@ -73,14 +73,14 @@
   @media screen and (max-width: 1840px) {
     .main-slider{
       width: 90%;
-      margin: auto;
+      margin: 10px auto;
   }
     }
     
     @media screen and (max-width: 1430px) {
       .main-slider{
         width: 95%;
-        margin: auto;
+        margin: 10px auto;
     }
     }
     
@@ -90,7 +90,6 @@
       }
       .main-slider{
         width: 100%;
-        
         
     }
     }
@@ -136,7 +135,7 @@
       
       .main-slider{
         width: 100%;
-        
+        margin: 10px auto;
         
     }
     }
