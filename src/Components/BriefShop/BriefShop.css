@@ -2,7 +2,7 @@
     display: flex;
     background-color: white;
     align-items: center;
-    margin: 0px 150px;
+    margin: 20px 150px;
     padding: 10px 0px;
 }
 
@@ -17,18 +17,15 @@
     width: 78px;
     border-radius: 50%;
     z-index: 0;
-    position: absolute;
     top: 0;
-    margin: 20px 0px;
 }
 
 .briefInfo_mallTag {
-    position: absolute;
+    position: relative;
     width: 64px;
     height: 16px;
     z-index: 1;
-    margin-top: 85px;
-    top: 0;
+    top: -10px;
 }
 
 .briefInfo_shopName{

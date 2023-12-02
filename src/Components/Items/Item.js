@@ -22,7 +22,6 @@ export default function () {
   const imgRefs = {
     slider1: useRef(null),
     slider2: useRef(null),
-    // ... create refs for other sliders as needed
   };
 
   const handleImageHover = (newImage) => {
@@ -30,10 +29,8 @@ export default function () {
   }
 
   const handleProductColorHover = (sliderKey) => {
-    // Use the ref associated with the hovered button to access the img element directly
     const newImage = imgRefs[sliderKey]?.current?.src;
 
-    // Check if newImage is defined before setting it
     if (newImage) {
       setHoveredImage(newImage);
     }

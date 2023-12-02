@@ -1,0 +1,65 @@
+.shopVoucher-Wrapper{
+    width: 30%;
+    margin: 0px 150px 0px 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.shopVoucher-Title {
+    color:rgba(0,0,0,.4);
+    font-weight: bold;
+}
+
+.shopVoucher-Content {
+    margin-top: 5px;
+}
+
+.voucherTag-Wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FF3557;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.voucherDetail-Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.voucherDetail {
+    font-size: 12px;
+    
+}
+
+.voucherDetail > div:nth-child(1) {
+    font-size: 15px;
+}
+
+.voucherDetail > div:nth-child(3) {
+    border: 1px solid #FF3557;
+    width: max-content;
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: #FF3557;
+}
+
+.voucherDate {
+    color:rgba(107, 107, 107, 0.773);
+    font-size: 12px;
+}
+
+.voucherSave-Btn {
+    background-color: #FF3557;
+    border-color: var(--vc-card-rect-button-ofs-border-color,#ee4d2d);
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 30%;
+    border-radius: 5px;
+}
