@@ -19,3 +19,48 @@
     font-size: 1.5rem;
 
 }
+.addproduct{
+    background-color: rgb(252, 10, 42);
+    width: 70px;
+    
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.addproduct:hover{
+    background-color: rgba(252, 10, 42,0.9);
+    cursor: pointer;
+
+}
+.shop-addpr{
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    z-index: 2;
+}
+.add-close{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+.add-close:hover{
+    cursor: pointer;
+    background-color: rgb(30, 29, 29);
+}
