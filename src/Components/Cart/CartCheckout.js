@@ -1,8 +1,26 @@
 import React from "react";
 import './CartCheckout.css';
 import './ActiveCart.css'
+function btnCheckout2(){
+   
+}
+function btnCheckout1(){
+   
+}
 
-export default function CartCheckout() {
+    
+export default function CartCheckout(props) {
+    const handleClick = (event) => {
+        event.preventDefault();
+      
+        if (event.target.textContent === "Proceed to Checkout") {
+          // Sử dụng window.location.href để chuyển hướng
+          window.location.href = "/checkout";
+        } else {
+          // Hiển thị thông báo nếu nội dung không phải là "Proceed to Checkout"
+          alert('Order successfully');
+        }
+      };
     return (
         <div class="pdCheckoutWrapper">
             <div class="a-cardui-body a-scroller-none">
@@ -19,8 +37,8 @@ export default function CartCheckout() {
                             </label>
                             <div class="ttctgift">This order contains gift</div>
                         </div>
-                        <div class="btnCheckout">
-                            <a class="btnPrepareC" href="#"   target="_blank">Proceed to Checkout</a>
+                        <div class="btnCheckout" onClick={handleClick}>
+                            <a class="btnPrepareC"    target="_blank">{props.title||"Proceed to Checkout"}</a>
                         </div>
                     </div>
                 </form>

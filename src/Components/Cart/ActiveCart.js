@@ -3,6 +3,8 @@ import './ActiveCart.css'
 import SectionSeller from '../SectionItem/SectionSeller';
 import CartCheckout from '../Cart/CartCheckout'
 import AdsCanvas from '../Cart/AdsCanvas'
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 export default function ActiveCart() {
     return (
         <div class="ppActiveCart" id='ppActiveCartId' >

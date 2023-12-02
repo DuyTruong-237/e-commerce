@@ -2,6 +2,7 @@ import React from "react";
 import './Checkout.css'
 import '../Cart/ActiveCart.css'
 import CheckoutInfo from './CheckoutInfo'
+import CartCheckout from "../Cart/CartCheckout";
 export default function Checkout(){
     return(
         <div class="checkoutWrapper" id='checkoutWrapperId' >
@@ -17,7 +18,7 @@ export default function Checkout(){
                         </div>
                        
                         <div class="CheckoutRight bgWhite">
-                        right
+                        <CartCheckout title="Place order"/>
                         </div>
                         </div>
                         </form>
