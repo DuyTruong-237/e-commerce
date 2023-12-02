@@ -7,7 +7,7 @@ import love from "../../Assets/Images/love.svg";
 import buy from "../../Assets/Images/shopping-bag.svg";
 
 
-export default function ProductItem() {
+export default function ProductItem(props) {
     // Định nghĩa các giá trị cần truyền qua
     const productName = "SON eve MAC NHUNG li";
     const pastPrice = "69.000";
@@ -20,7 +20,7 @@ export default function ProductItem() {
                 
                 <div className="PITop">
                     <div className="sliderWrapper">
-                        <ProductSlider />
+                        <ProductSlider images={props.images} />
                     </div>
                 </div>
                 <a href='/inforproduct'>
@@ -28,15 +28,15 @@ export default function ProductItem() {
                     <div className="productName">
                         {/* Truyền giá trị thông qua props */}
                         <ItemProducts
-                            name={productName}
+                            name={props.name}
                         />
                          </div>
                         <div className="productCoupon">
                             <img className="cpSale" id="couponProduct" src={coupon} alt="Coupon" />
                         </div>
                         <ItemProducts
-                            pastPrice={pastPrice}
-                            currentPrice={currentPrice}
+                            pastPrice={props.pastPrice}
+                            currentPrice={props.currentPrice}
                         />
                         <div className="iconEnd">
                             <div className="iconlove">

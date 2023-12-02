@@ -32,9 +32,7 @@ let ProductData = [
   },
   {
     image: [
-      'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo5fxmnrrmvfdd',
       'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo5fxmnrug0bac',
-      'https://down-vn.img.susercontent.com/file/75https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo5fxmnrt1fvfd19b7b794ff3e09fc5e4b11111b16d4',
       'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo5fk1j1wid394'
     ],
     name: "Aasics Shoes",
