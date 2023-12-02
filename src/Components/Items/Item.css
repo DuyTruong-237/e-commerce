@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 150px;
-    align-items: flex-start;
     flex-shrink: 1;
     background-color: white;
 }
@@ -73,7 +72,7 @@
 
 .priceItem {
     font-size: 1.875rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #FF3557;
     margin-top: 30px;
     padding: 15px 20px;
@@ -96,6 +95,7 @@
     color: #FF3557;
     margin-left: 30px;
     padding: 2px;
+    text-align: center;
 }
 
 .itemInsurance {
@@ -135,6 +135,7 @@
     font-size: 18px;
     background-color: white;
     padding-right: 20px;
+    margin-left: 10px;
 }
 
 .ratingStar > img:nth-child(5) {
@@ -234,6 +235,10 @@
     margin-right: 20px;
 }
 
+.available-product {
+    margin-top: 10px;
+}
+
 .buyModal {
     display: flex;
     align-items: center;
@@ -280,5 +285,42 @@
 .buyNow:hover{
     cursor: pointer;
     background-color: rgb(254, 74, 104);
+}
+
+@media screen and (max-width: 1300px){
+    .itemImage{
+        margin-left: 0px;
+    }
+    .itemInfo_Wrapper{
+        margin-right: 0px;
+        padding: 0px 20px 20px 30px;
+    }
+    .itemName {
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .itemInsurance > div:nth-child(1) {
+        margin-left: 25px;
+    }
+    .ratingCom-Wrapper {
+        margin: 0;
+    }
+    .briefInfo_Wrapper{
+        margin: 0px 10px;
+    }
+    .available-product {
+        width: 50%;
+    } 
+    .itemInfo {
+        margin: 0;
+    }
+    .buyModal {
+        margin: 30px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .priceItem {
+        font-size: 25px
+      }
 }
 
