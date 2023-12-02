@@ -130,16 +130,7 @@ let ProductData = [
     name: "Multi NX Daikin 3.5HP",
     price: "10888"
   },
-  {
-    image: [
-      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lji6w6gg1urmc6',
-      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lji6w6gg4nwif2',
-      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lji6w6gg0g7644',
-      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lji6w6gg39c2fc'
-    ],
-    name: "BONECO H680",
-    price: "10888"
-  },
+  
   {
     image: [
       'https://down-vn.img.susercontent.com/file/02a06ae9c4c4638ec30dcb4990ccb75c',
@@ -158,6 +149,56 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llt6eul6g0yn0d'   
     ],
     name: "Apple iPhone 15 Pro Max 256GB",
+    price: "10888"
+  },
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/4810f7ee4c4a5c495fb853db530f16e2',
+      'https://down-vn.img.susercontent.com/file/9f862eccd3033fa87da92e4b5f7408ee',
+      'https://down-vn.img.susercontent.com/file/ac82d7eedcf46366d03b8065540af24a',
+      'https://down-vn.img.susercontent.com/file/ba30d99db990300761e92c1c2507cf79'
+    ],
+    name: "Massage Chair",
+    price: "10888"
+  },
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw3rzp78',
+      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw3s0444',
+      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw56kkcd',
+      'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw6l5069'
+    ],
+    name: "Yamaha R3",
+    price: "10888"
+  },
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/79527aad65104aea685333194d3183c5',
+      'https://down-vn.img.susercontent.com/file/ddd101ac12fd78834384e4902aca2e05',
+      'https://down-vn.img.susercontent.com/file/e47ac5872823a2756956350081f43c79',
+      'https://down-vn.img.susercontent.com/file/dc66bf96aaa163961d755d4074b1127c'
+    ],
+    name: "Laptop AcerPredator Triton500SE PT516-52s-91XH i912900H|32GB|2TB|3080Ti|16'240Hz|W11",
+    price: "10888"
+  },
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/222364c0321fb7669df1570672c31ae6',
+      'https://down-vn.img.susercontent.com/file/e224b040c3df6532c82498568b0b5599',
+      'https://down-vn.img.susercontent.com/file/e224b040c3df6532c82498568b0b5599',
+      'https://down-vn.img.susercontent.com/file/319aef02d7393281a892a6e75d438fc9'
+    ],
+    name: "Hitachi Refrigerator",
+    price: "10888"
+  },
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/062b8cbcd638a6c8730c411c88c129b9',
+      'https://down-vn.img.susercontent.com/file/7e99804c211465acf07ded535a56a99f',
+      'https://down-vn.img.susercontent.com/file/f248561db8fc95f66b31e0a7cfb10d87',
+      'https://down-vn.img.susercontent.com/file/5b302849c52e372a0f35107284a15097'
+    ],
+    name: "Bosch WAV28L40SG 9kg",
     price: "10888"
   },
 ];

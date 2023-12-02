@@ -1,0 +1,38 @@
+.sorting-bar {
+    display: flex;
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #dbd8d8;
+  }
+  .sort-options {
+    margin-top: 5px;
+    height: 35px;
+    display: flex;
+    list-style-type: none;
+  }
+  .sort-options li {
+    margin-top: 5px;
+    padding: 5px ;
+    margin-right: 10px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+  .sort-options li:not(:last-child) {
+    border-right: 1px solid #f5f3f3;
+  }
+  .pagination {
+    display: flex;
+    margin-top: 25px;
+    
+  }
+  .pagination span {
+    padding: 5px 10px;
+    border: 1px solid #c0bdbd;
+    margin-right: 5px;
+    cursor: pointer;
+  }
