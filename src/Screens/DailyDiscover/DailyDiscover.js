@@ -1,5 +1,6 @@
 import React from 'react'
 import "./DailyDiscover.css"
+import { ProductData } from '../../data'
 import ProductItem from "../../Components/Product/ProductItem"
 import Header from "../../Components/Header/Header"
 import NumberTab from '../../Components/NumberTab/NumberTab'
@@ -21,26 +22,16 @@ export default function DailyDiscover() {
 
           </div>
           <div className='sdd-content'>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
-            <div className='sdd-content-items'><ProductItem/></div>
+          {
+            ProductData.map((item) => {
+              return (
+                <div className="sdd-content-items" >
+                  <ProductItem name={item.name} currentPrice={item.price} images={item.image}/>
+                </div>
+              )
+            })
+          }
             
-
           </div>
           <NumberTab/>
 

@@ -11,7 +11,7 @@ import son3 from '../../Assets/Images/Product Images/son3.png';
 
 const ImageSlider = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = props.images;
+  const images = props.images || [son1,son2];
   const nextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
   };
