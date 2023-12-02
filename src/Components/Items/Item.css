@@ -287,6 +287,10 @@
     background-color: rgb(254, 74, 104);
 }
 
+.silderImage:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1300px){
     .itemImage{
         margin-left: 0px;

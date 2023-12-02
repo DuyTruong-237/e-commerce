@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Item.css';
 import "../../Assets/font-icons/themify-icons-font/themify-icons/themify-icons.css";
 import exItem from '../Items/vn-11134207-7r98o-llt6eul6d7tr35.jpg';
@@ -16,15 +17,17 @@ import pinterestLogo from '../Items/pinterest.png';
 import xLogo from '../Items/twitter.png';
 
 export default function () {
-  const [mainImage, setMainImage] = useState(exItem);
+  const location = useLocation();
+  const selectedProduct = location.state?.selectedProduct;
+  const [mainImage, setMainImage] = useState(selectedProduct.image[0]);
   const [hoveredImage, setHoveredImage] = useState(null);
   const imgRefs = {
     slider1: useRef(null),
     slider2: useRef(null),
   };
 
-  const handleImageHover = (newImage) => {
-    setMainImage(newImage || hoveredImage || exItem);
+  const handleImageClick = (index) => {
+    setMainImage(selectedProduct.image[index]);
   };
 
   const handleProductColorHover = (sliderKey) => {
@@ -38,6 +41,10 @@ export default function () {
   const handleProductColorLeave = () => {
     setHoveredImage(null);
   };
+  const {
+    image,
+    name,
+  } = selectedProduct;
   return (
     <div className='itemWrapper'>
       <div className='itemImage'>
@@ -45,11 +52,15 @@ export default function () {
           <img className='mainImage' src={mainImage} alt="Main Image"></img>
         </div>
         <div className='sliderImage_Wrapper'>
-          <img className='silderImage' src={imageSlider1} alt="Slider Image 1" onMouseOver={() => handleImageHover(imageSlider1)}></img>
-          <img className='silderImage' src={imageSlider2} alt="Slider Image 2" onMouseOver={() => handleImageHover(imageSlider2)}></img>
-          <img className='silderImage' src={imageSlider3} alt="Slider Image 3" onMouseOver={() => handleImageHover(imageSlider3)}></img>
-          <img className='silderImage' src={imageSlider4} alt="Slider Image 4" onMouseOver={() => handleImageHover(imageSlider4)}></img>
-          <img className='silderImage' src={imageSlider5} alt="Slider Image 5" onMouseOver={() => handleImageHover(imageSlider5)}></img>
+        {image.map((img, index) => (
+          <img
+            key={index}
+            className='silderImage'
+            src={img}
+            alt={`Slider Image ${index}`}
+            onClick={() => handleImageClick(index)}
+          />
+        ))}
         </div>
         <div className='utilities_Wrapper'>
           <div className='socialSharing'>
@@ -68,7 +79,7 @@ export default function () {
 
       <div className='itemInfo_Wrapper'>
         <div className='itemName'>
-          <span>Apple iPhone 15 Pro Max 256GB</span>
+          <span>{name}</span>
         </div>
         <div className='ratingItem'>
           <div className='ratingStar'>
