@@ -1,104 +1,20 @@
 import React from 'react'
 import "./Categories.css"
+import { CategoriesData } from '../../data';
 import Background from '../BackGroundItems/Background'
 import didong from './dientu.jpg'
+import CategoriesItem from './CategoriesItem/CategoriesItem'
 export default function Categories() {
   return (
     <Background title="Categories" className="cat-br" >
         
         <div className='cat-content'>
             <div className='cat-items'>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item' >
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
-                <div className='cat-item'>
-                    <div className='overlay'>
-                        <div className='cat-name'>Áo Khoác</div>
-                    </div>
-                </div>
+                {
+                    CategoriesData.map((item) => {
+                        return <CategoriesItem  name={item.name} url={item.url}/>
+                    })
+                }
                 
                
                
