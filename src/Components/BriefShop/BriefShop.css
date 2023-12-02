@@ -88,8 +88,7 @@
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-gap: 1.25rem 3.125rem;
-    gap: 1.25rem 3.125rem
-    ;
+    gap: 1.25rem 3.125rem;
     margin: 0px 10px;
     width: 60%;
 }
@@ -104,4 +103,5 @@
 .shopRating > span {
     color: #FF3557;
     text-align: right;
+    margin-left: 5px;
 }

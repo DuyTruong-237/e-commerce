@@ -84,4 +84,18 @@
 .saveItemDesContent-Btn:hover {
     opacity: 0.5;
 }
+@media screen and (max-width: 1200px){
+    .itemDescription-Wrapper {
+        margin: 0;
+        width: 70%;
+    }
+
+    
+}
+@media screen and (max-width: 800px) {
+    .mainImage {
+        width: 50%;
+        height: 200px;
+      }
+}
 

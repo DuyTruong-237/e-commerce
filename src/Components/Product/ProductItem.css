@@ -21,6 +21,10 @@ margin-right: auto;
 margin-bottom: 7px;
 }
 
+.sliderWrapper:hover{
+    cursor: pointer;
+}
+
 .PIBot{
     height: 40%;
     width: 90%;
