@@ -35,7 +35,7 @@ export default function ListItem() {
       return isNaN(itemPrice) ? accumulator : accumulator + itemPrice;
     }, 0);
 
-    const formattedTotalPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
+    const formattedTotalPrice = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(sum);
 
     setTotalPrice(sum);
     setFormattedTotalPrice(formattedTotalPrice);
@@ -43,7 +43,7 @@ export default function ListItem() {
 
   const handleConnectShop = () => {
     navigate('/shop');
-  }
+  };
 
   return (
     <div className='listItem-Wrapper'>
@@ -51,7 +51,7 @@ export default function ListItem() {
         <div className='pdShopPart'>
           <div className='shopPart-Container'>
             <div className='preferShop'>
-              Yêu thích
+              Favorite
             </div>
             <span className='nameShop'>PamPam Shop</span>
             <div className='chatBtn-Wrapper'>
@@ -60,11 +60,11 @@ export default function ListItem() {
             </div>
             <div className='connectShop_Btn' onClick={handleConnectShop}>
               <img src={shopIcon} alt="" />
-              Xem Shop
+              View Shop
             </div>
           </div>
           <div className='ratingPurchase'>
-            ĐÁNH GIÁ
+            RATINGS
           </div>
         </div>
         {Object.keys(uniqueNameCounts).map((name) => (
