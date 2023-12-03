@@ -17,19 +17,7 @@
     overflow-x: auto;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
-.cat-item{
-    background-image: url("./aokhoac.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(31, 31, 31,0.3);
-    
-    width: 100px;
-    height: 130px;
-    background-color: rgb(247, 244, 247);
-    transition: transform 0.3s ease; 
-    transform-origin: center;
-}
+
 .cat-item:hover{
     transform: scale(1.2);
 }
@@ -46,9 +34,11 @@
 
 .cat-name{
     color: rgb(242, 221, 224);
-    font-size: 19px;
-   
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
 }
+
 @media screen and (max-width: 1840px) {
     .Categories{
       width: 90%;

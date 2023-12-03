@@ -5,7 +5,7 @@ import "./Header.css"
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
-
+  const username= localStorage.getItem('username');
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -13,7 +13,7 @@ export default function Header() {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
-  const memoizedMiniCart = useMemo(() => <MiniCart />, []);
+  const memoizedMiniCart = useMemo(() => <div className="header-MiniCart"><MiniCart /></div>, []);
   return (
     <div >
       <div class="headerWrapper">
@@ -47,14 +47,14 @@ export default function Header() {
                   </a>
                 </li>
                 <li >
-                  <a href="#" class="subHeader inlineBlock textWhite sizeText15">
+                  <a href="#" class="btn-login subHeader inlineBlock textWhite sizeText15">
                     <img src='./images/Icon/user.svg' class="cssSvg" alt='icon user'></img>
-                    <a href='/login' class="textWhite textBold ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign in </a>
-                    <ul className="subnav">
+                    {username?<><a href='/login' class="textWhite textBold ">{username} </a> <ul className="subnav">
                                    <li><a href="/profile">My Profile</a></li>
                                    <li><a href="/">My Purchase</a></li>
                                    <li><a href="/">Log out</a></li>
-                    </ul>
+                    </ul></>  :<><a href='/login' class="textWhite textBold btn-login ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign up </a></>}
+                   
 
                   </a>
                 </li>

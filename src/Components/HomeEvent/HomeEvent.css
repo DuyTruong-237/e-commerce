@@ -13,7 +13,7 @@
   }
 .He-content{
     display: flex;
-    width: 1005;
+    width: 100%;
     justify-content: center;
     align-items: center;
 
@@ -120,8 +120,8 @@
         min-height: 100px;
     }
     }
-    @media screen and (max-width: 665px) {
-      .HE-body {
+    @media screen and (max-width: 720px) {
+      .event-content {
         grid-template-columns: repeat(3, 1fr);
       }
       .HE-body{
@@ -133,8 +133,8 @@
         min-height: 100px;
     }
     }
-    @media screen and (max-width: 500px) {
-      .HE-body {
+    @media screen and (max-width: 530px) {
+      .event-content {
         grid-template-columns: repeat(2, 1fr);
       }
       .HE-body{

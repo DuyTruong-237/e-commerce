@@ -9,10 +9,10 @@ import shopIcon from '../BriefShop/shop.png'
 export default function briefShop() {
   return (
     <div className='briefInfo_Wrapper'>
-      <div className='briefInfo_shopAvatar'>
+      <a href='/shop' className='briefInfo_shopAvatar'>
         <img className='briefInfo_imgAvatar' src={avaShop} alt="" />
         <img className='briefInfo_mallTag' src={mallTag} alt="" />
-      </div>
+      </a>
       <div className='briefInfo_shopName_Wrapper'>
         <div className='briefInfo_shopName'>
           <span>ShopDunk Official Store</span>
@@ -22,10 +22,10 @@ export default function briefShop() {
               <img src={chatIcon} alt="" />
               Chat Ngay
             </button>
-            <button className='connectProfile_Btn'>
+            <a href='/shop' className='connectProfile_Btn'>
               <img src={shopIcon} alt="" />
               Xem Shop
-            </button>
+            </a>
           </div>
         </div>
 

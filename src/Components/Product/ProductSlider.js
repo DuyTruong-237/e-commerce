@@ -7,11 +7,11 @@ import son1 from '../../Assets/Images/Product Images/son1.png';
 import son2 from '../../Assets/Images/Product Images/son2.png';
 import son3 from '../../Assets/Images/Product Images/son3.png';
 
-const images = [son1, son2, son3];
 
-const ImageSlider = () => {
+
+const ImageSlider = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
-
+  const images = props.images || [son1,son2];
   const nextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
   };

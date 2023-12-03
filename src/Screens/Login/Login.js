@@ -31,6 +31,29 @@ const images = [
   
 export default function Login() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [username, setUsername] = useState("");
+
+    const [password, setPassword] = useState("");
+    function checkAccoutPassword(){
+      if(username=="admin")
+      {
+        if(password=="123456")
+        {
+          console.log(username)
+          localStorage.setItem("username",username)
+          window.location.href="/";
+        }
+      }
+      else if(username=="user")
+      {
+        if(password=="123456")
+        {
+          localStorage.setItem("username",username)
+          window.location.href="/";
+        }
+      }
+      
+    }
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -70,20 +93,20 @@ export default function Login() {
             <img className='lg-logo' src={logo}/>
             <div className='lg-login'>Login</div>
             <div className='lg-input'>
-                <div className='ip-title'>Username</div>
-                <input className='ip-enter'/>
+                
+                <input value={username} onChange={(e) => setUsername(e.target.value)} className='ip-enter'placeholder='Username'/>
 
             </div>
             <div className='lg-input'>
-                <div className='ip-title'>Password</div>
-                <input className='ip-enter'/>
+                
+                <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} className='ip-enter' placeholder='Password'/>
 
             </div>
             <div className='lg-click'>
                 <a className='lg-a'>Forgot password</a>
-                <a href='/' className='lg-btn'>
+                <button onClick={checkAccoutPassword}  className='lg-btn'>
                     Login
-                </a>
+                </button>
             </div>
             
             </div>

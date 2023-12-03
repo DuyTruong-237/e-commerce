@@ -11,3 +11,11 @@
 .mg-r5{
  margin-right: 5px;
 }
+.container-fluid{
+
+}
+.row{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
