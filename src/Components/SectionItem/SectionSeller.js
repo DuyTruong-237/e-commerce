@@ -1,7 +1,14 @@
 import React from 'react';
 import './SectionSeller.css'
+import { Cart } from '../../data'
 import SectionItems from './SectionItems';
 export default function SectionSeller() {
+    console.log(Cart);
+    const chunkedCart = [];
+    const chunkSize = 3;
+    for (let i = 0; i < Cart.length; i += chunkSize) {
+        chunkedCart.push(Cart.slice(i, i + chunkSize));
+    }
     return (
         <section class="sectionWrapper">
             <h3 class="sthidden">Shop Section</h3>
@@ -28,13 +35,12 @@ export default function SectionSeller() {
                         </div>
                         <span class="mg-left10">M.A.C OFFICIAL </span>
                     </a>
-                  
+
                 </div>
             </div>
-            <SectionItems />
-            <SectionItems />
-            <SectionItems />
-            <SectionItems />
+            {chunkedCart.map((item, index) => (
+                <SectionItems key={index} items={item} />
+            ))}
         </section>
     )
 }

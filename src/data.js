@@ -288,4 +288,11 @@ let CommentData = [
 
 ];
 
-export { CategoriesData, ProductData, CommentData};
+let Cart = [];
+
+const addToCart = (products) => {
+  Cart = [...Cart, ...products];
+};
+
+export { CategoriesData, ProductData, CommentData, Cart, addToCart };
+

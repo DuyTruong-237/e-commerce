@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import { addToCart } from '../../data';
 import { useNavigate } from 'react-router-dom';
 import './Item.css';
 import "../../Assets/font-icons/themify-icons-font/themify-icons/themify-icons.css";
@@ -32,10 +33,10 @@ export default function () {
     setMainImage(selectedProduct.image[index]);
   };
 
-  const handleBuyProduct = (item) => {
-    navigate(`/cart?productName=${encodeURIComponent(item.name)}&productPrice=${item.price}&productId=${item.id}`);
-
-    console.log(selectedProduct)
+  const handleBuyProduct = () => {
+    addToCart(productArray);
+    navigate('/cart');
+    console.log(productArray);
   }
 
   const handleProductColorHover = (sliderKey) => {
@@ -58,6 +59,12 @@ export default function () {
     available,
     price
   } = selectedProduct;
+
+  const productArray = [
+    selectedProduct.image[0],
+    selectedProduct.name,
+    selectedProduct.price
+  ];
 
   const renderRatingStars = (rating) => {
     const stars = [];
@@ -188,7 +195,7 @@ export default function () {
           <div className='addToCart'>
             <span className='ti-shopping-cart'> Add to Cart</span>
           </div>
-          <div className='buyNow' onClick={handleBuyProduct}>
+          <div className='buyNow' onClick={() => handleBuyProduct (productArray)}>
             <span>Buy Now</span>
           </div>
         </div>
