@@ -5,19 +5,8 @@ import { useState, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Son from "../../Assets/Images/Product Images/son1.png"
-
-export default function SectionItems() {
-    const location = useLocation();
-    const productName = new URLSearchParams(location.search).get('productName');
-    const productPrice = new URLSearchParams(location.search).get('productPrice');
-
-    const selectedProduct = {
-        name: productName,
-        price: productPrice,
-        // ... thêm các thông tin sản phẩm khác nếu cần
-    };
-
-    console.log(selectedProduct);
+export default function SectionItems({ items }) {
+    const [image, productName, productPrice] = items;
 
     return (
         <section class="stProductCart bdbot" role="list">
@@ -31,23 +20,32 @@ export default function SectionItems() {
                             </div>
                         </label>
                     </div>
+
                     <div class="productinfo">
                         <div class="pdi1">
                             <a title="M.A.C OFFICIAL " href="#" >
-                                <img class="img_pdi" src={Son}></img>
+                                <img class="img_pdi" src={image} />
                             </a>
                             <div class="pdi2">
-                                <a class="pdi2_1" href="#"></a>
+                                <a class="pdi2_1" href="#">{productName}</a>
                             </div>
                         </div>
                     </div>
                     <div class="typepd">
                         <div class="typepdfil">
                             <button class="ppbtnwrap" role="button" tabindex="0">
-                                <div class="ppvari">Variations:
-                                    <div class="ppvariicon"></div>
+                                <div class="typepd">
+                                    <div class="typepdfil">
+                                        {/* <button class="ppbtnwrap" role="button" tabindex="0">
+                                            <div class="ppvari">Variations:
+                                                <div class="ppvariicon"></div>
+                                            </div>
+                                            <div class="ppopt">Màu đen 1150</div>
+                                        </button>
+                                        <div>
+                                        </div> */}
+                                    </div>
                                 </div>
-                                <div class="ppopt">Màu đen 1150</div>
                             </button>
                             <div>
                             </div>
@@ -55,10 +53,10 @@ export default function SectionItems() {
                     </div>
                     <div class="pppricewrap">
                         <div>
-                            <span class="ppprice oldprice1">₫100.000</span>
-                            <span class="ppprice">₫92.900</span>
+                            <span class="ppprice">{productPrice}</span>
                         </div>
                     </div>
+
                     <div class="abc">
                         <div class="quantitywrap">
                             <div class="quantity-control">
@@ -69,18 +67,14 @@ export default function SectionItems() {
                         </div>
                     </div>
                     <div class="totalprice">
-                        <span>₫92.900</span>
-                        <span class="sthidden" aria-live="polite">Total price: ₫92.900</span>
+                        <span>{productPrice}</span>
+                        <span class="sthidden" aria-live="polite">Total price: {productPrice}</span>
                     </div>
                     <div class="ppactionwrap ppactionwrap1">
                         <button class="btntitle">Delete</button>
                     </div>
-
-
                 </div>
             </div>
-
-
         </section>
     )
 }
