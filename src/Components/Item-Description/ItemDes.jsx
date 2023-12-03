@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ItemDes.css'
-import rightBtn from '../Item-Description/right.png'
-import editBtn from '../Item-Description/edit-button.png'
+import './ItemDes.css';
+import rightBtn from '../Item-Description/right.png';
+import editBtn from '../Item-Description/edit-button.png';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function ItemDes() {
@@ -29,34 +29,32 @@ export default function ItemDes() {
   return (
     <div className='itemDescription-Wrapper'>
       <div className='itemDes-Title'>
-        <span>Mô Tả Sản Phẩm</span>
-
+        <span>Product Description</span>
       </div>
       <div className='itemDes-Detail'>
         <div className='itemCategory'>
           <div className='itemCategory-Title'>
-            <span>Danh Mục</span>
+            <span>Category</span>
             <a href="#" onClick={handleNavigateToHome}>
               PamPam
             </a>
             <img src={rightBtn} alt="" />
             <a href="#">
-              Điện thoại
+              Phones
             </a>
             <img src={rightBtn} alt="" />
             <a href="#">
               Apple
             </a>
           </div>
-
           <div className='itemCategory-Title'>
-            <span>Thương Hiệu</span>
+            <span>Brand</span>
             <a href="#">
               Apple
             </a>
           </div>
           <div className='itemCategory-Title'>
-            <span>Kho Hàng</span>
+            <span>Warehouse</span>
             <span>450</span>
           </div>
         </div>
@@ -64,7 +62,7 @@ export default function ItemDes() {
       <div className='itemDes-Content'>
         {isEditing ? (
           <div className='itemDes-ContentScript'>
-            <textarea value={textContent} onChange={handleTextareaChange}/>
+            <textarea value={textContent} onChange={handleTextareaChange} />
             <button className='saveItemDesContent-Btn' onClick={handleSaveButtonClick}>Save</button>
           </div>
         ) : (
@@ -73,7 +71,6 @@ export default function ItemDes() {
         <button className='editItemDesContent-Btn' onClick={handleEditButtonClick}>
           <img src={editBtn} alt="Edit" />
         </button>
-
       </div>
     </div>
   );
