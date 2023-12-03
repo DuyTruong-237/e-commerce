@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./CompoProfile.css"
 import Avatar from "../../Assets/Images/avatar.jpeg"
 import userAcc from "../../Assets/Images/userProfile.svg"
@@ -6,6 +7,18 @@ import userShop from "../../Assets/Images/shop.svg"
 import shoppingBag from "../../Assets/Images/shopping-bag.svg"
 import voucher from "../../Assets/Images/coupon.svg"
 export default function Profile() {
+    const navigate = useNavigate();
+    const handlePurchaseScreen = () =>{
+        navigate('/order');
+    }
+
+    const handleShopScreen = () =>{
+        navigate('/shop');
+    }
+
+    const handleProfileScreen = () =>{
+        navigate('/profile');
+    }
     return (
         <div class="profileNavLeft">
                 <div class="navLUser">
@@ -46,7 +59,7 @@ export default function Profile() {
                         </div>
                         <div class="stardust-dropdown__item-body stardust-dropdown__item-body--open iii" >
                             <div class="Yu7gVR">
-                                <a class="FEE-3D tH0d6d" href="#">
+                                <a class="FEE-3D tH0d6d" href="#" onClick={handleProfileScreen}>
                                     <span class="qyt-aY">Profile</span>
                                 </a>
                                 <a class="FEE-3D" href="#">
@@ -69,7 +82,7 @@ export default function Profile() {
                                 <div class="bfikuD">
                                     <img class="sizeImgIcon" src={shoppingBag} />
                                 </div>
-                                <div class="DlL0zX">
+                                <div class="DlL0zX" onClick={handlePurchaseScreen}>
                                     <span class="adF7Xs">My Purchase</span>
                                 </div>
                             </a>
@@ -86,7 +99,7 @@ export default function Profile() {
                                 <div class="bfikuD">
                                     <img class="sizeImgIcon" src={userShop} />
                                 </div>
-                                <div class="DlL0zX">
+                                <div class="DlL0zX" onClick={handleShopScreen}>
                                     <span class="adF7Xs">My Shop</span>
                                 </div>
                             </a>

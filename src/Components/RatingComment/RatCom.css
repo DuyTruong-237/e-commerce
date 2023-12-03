@@ -59,6 +59,11 @@
     margin: 10px 10px 0px;
 }
 
+.ratingFilter:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .Comment-Wrapper{
     display: flex;
     margin-top: 20px;

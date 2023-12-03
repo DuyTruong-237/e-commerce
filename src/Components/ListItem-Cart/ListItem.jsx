@@ -1,28 +1,50 @@
 import React, { useState, useEffect } from 'react';
-import chatIcon from '../ListItem-Cart/chat-bubbles-with-ellipsis.png'
-import shopIcon from '../BriefShop/shop.png'
-import brideVoTri from '../ListItem-Cart/screenshot_1701161615.png'
-import nucuoituthien from '../ListItem-Cart/387501171_1649638692106947_6854831053234935170_n.jpg'
-import './ListItem.css'
+import chatIcon from '../ListItem-Cart/chat-bubbles-with-ellipsis.png';
+import shopIcon from '../BriefShop/shop.png';
+import './ListItem.css';
 import { useNavigate } from 'react-router-dom';
 import { ProductData } from '../../data';
 
-export default function
-  () {
+export default function ListItem() {
   const [totalPrice, setTotalPrice] = useState(0);
+  const [formattedTotalPrice, setFormattedTotalPrice] = useState('');
   const navigate = useNavigate();
-  useEffect(() => {
-    const productPrices = document.querySelectorAll('.listProductPrice-Container div');
-    let sum = 0;
-    productPrices.forEach((price) => {
-      sum += parseFloat(price.textContent.replace('$', ''));
+
+  const countUniqueProductNames = () => {
+    const uniqueNames = [...new Set(ProductData.map(item => item.name))];
+    const nameCount = {};
+
+    uniqueNames.forEach((name) => {
+      const count = ProductData.filter(item => item.name === name).length;
+      nameCount[name] = count;
     });
+
+    return nameCount;
+  };
+
+  const uniqueNameCounts = countUniqueProductNames();
+  console.log(uniqueNameCounts);
+
+  useEffect(() => {
+    const sum = ProductData.reduce((accumulator, item) => {
+      const itemPrice = parseFloat(item.price.replace(/[.,₫]/g, '').trim());
+      console.log(itemPrice);
+
+      console.log(`Item: ${item.name}, Price: ${item.price}, Parsed Price: ${itemPrice}`);
+
+      return isNaN(itemPrice) ? accumulator : accumulator + itemPrice;
+    }, 0);
+
+    const formattedTotalPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
+
     setTotalPrice(sum);
+    setFormattedTotalPrice(formattedTotalPrice);
   }, []);
 
   const handleConnectShop = () => {
     navigate('/shop');
   }
+
   return (
     <div className='listItem-Wrapper'>
       <div className='shopPart-Wrapper'>
@@ -45,26 +67,26 @@ export default function
             ĐÁNH GIÁ
           </div>
         </div>
-        {ProductData.map((item) => (
-          <div className='listProduct-Wrapper'>
+        {Object.keys(uniqueNameCounts).map((name) => (
+          <div key={name} className='listProduct-Wrapper'>
             <div className='listProductContent-Wrapper'>
               <div className='listProductImg-Container'>
-                <img className='listProductImg' src={item.image[0]} alt="" />
+                <img className='listProductImg' src={ProductData.find(item => item.name === name).image[0]} alt="" />
               </div>
               <div className='listProductContent-Container'>
-                <div>{item.name}</div>
-                <div>x1</div>
+                <div>{name}</div>
+                <div>x{uniqueNameCounts[name]}</div>
               </div>
             </div>
             <div className='listProductPrice-Container'>
-              <div>{item.price}</div>
+              <div>{ProductData.find(item => item.name === name).price}</div>
             </div>
           </div>
         ))}
       </div>
       <div className='reconnectPart-Wrapper'>
         <div className='totalPrice-Oder' id='totalPrice'>
-          <span className="total-price-value">{totalPrice.toFixed(2)}$</span>
+          <span className="total-price-value">{formattedTotalPrice}</span>
         </div>
         <div className='reconnectButtonPart'>
           <div>Buy Again</div>
@@ -72,8 +94,6 @@ export default function
           <div>View Shop Rating</div>
         </div>
       </div>
-
-
     </div>
-  )
+  );
 }

@@ -39,6 +39,11 @@ white-space: nowrap;
   overflow: hidden; 
   text-overflow: ellipsis; 
 }
+
+..productName:hover {
+    cursor: pointer;
+}
+
 .nameItem{
 font-size: 16px;
 font-weight: 700;

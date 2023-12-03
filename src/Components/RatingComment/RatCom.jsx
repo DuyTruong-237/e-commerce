@@ -1,11 +1,39 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import starIcon from '../Items/star.png'
 import ratingStar from '../../Components/Items/star.png'
 import userAvatar from '../../Components/RatingComment/user.png'
+import { CommentData } from "../../data"
 import './RatCom.css'
 
 export default function
     () {
+    const [comments, setComments] = useState(CommentData);
+    const [filteredComments, setFilteredComments] = useState(CommentData);
+
+    const renderRatingStars = (rating) => {
+        const stars = [];
+        for (let i = 0; i < rating; i++) {
+            stars.push(<img key={i} className='ratingStar-Cmt' src={ratingStar} alt='' />);
+        }
+        return stars;
+    };
+
+    const handleFilter5star = () => {
+        const filteredComments = comments.filter(cmt => cmt.rate === '5');
+        setFilteredComments(filteredComments);
+    };
+
+    const handleFilter4star = () => {
+        const filteredComments = comments.filter(cmt => cmt.rate === '4');
+        setFilteredComments(filteredComments);
+    };
+
+    useEffect(() => {
+        setFilteredComments(comments);
+        console.log(comments)
+      }, [comments]);
+    
     return (
         <div className='ratingCom-Wrapper'>
             <div className='ratingCom-Title'>ĐÁNH GIÁ SẢN PHẨM</div>
@@ -27,10 +55,10 @@ export default function
                     <div className='ratingFilter'>
                         Tất cả
                     </div>
-                    <div className='ratingFilter'>
+                    <div className='ratingFilter' onClick={handleFilter5star}>
                         5 Sao
                     </div>
-                    <div className='ratingFilter'>
+                    <div className='ratingFilter' onClick={handleFilter4star}>
                         4 Sao
                     </div>
                     <div className='ratingFilter'>
@@ -50,76 +78,28 @@ export default function
                     </div>
                 </div>
             </div>
-            <div className='Comment-Wrapper'>
-                <div className='Customer-Avatar'>
-                    <img src={userAvatar} alt="" />
-                </div>
-                <div className='Comment-Container'>
-                    <div className='Customer-Name'>
-                        <span>Nhy Thanh</span>
+            {filteredComments.map((cmt) => (
+                <div className='Comment-Wrapper'>
+                    <div className='Customer-Avatar'>
+                        <img src={userAvatar} alt="" />
                     </div>
-                    <div className='Customer-Rating'>
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
+                    <div className='Comment-Container'>
+                        <div className='Customer-Name'>
+                            <span>{cmt.name}</span>
+                        </div>
+                        <div className='Customer-Rating'>
+                            {renderRatingStars(cmt.rate)}
+                        </div>
+                        <div className='Comment-Content'>
+                            <span>{cmt.comment}</span>
+                        </div>
+                        <div className='Comment-Media'>
+                            <img src="" alt="" />
+                        </div>
                     </div>
-                    <div className='Comment-Content'>
-                        <span>Vận chuyển nhanh chóng, rất tốt. Mua ở đây yên tâm hơn mua ở apple flagship store nhiều. Sẽ ủng hộ PamPam Shop.</span>
-                    </div>
-                    <div className='Comment-Media'>
-                        <img src="" alt="" />
-                    </div>
-                </div>
-            </div>
-            <div className='Comment-Wrapper'>
-                <div className='Customer-Avatar'>
-                    <img src={userAvatar} alt="" />
-                </div>
-                <div className='Comment-Container'>
-                    <div className='Customer-Name'>
-                        <span>Dương Duy Trường</span>
-                    </div>
-                    <div className='Customer-Rating'>
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                    </div>
-                    <div className='Comment-Content'>
-                        <span>Máy giao nhanh , bọc chống shock rất là okela luônnnn. Seal đầy đủ. Mua nhiều lần ở shop rồi thấy hỗ trợ nhiệt tình phết.</span>
-                    </div>
-                    <div className='Comment-Media'>
-                        <img src="" alt="" />
-                    </div>
-                </div>
-            </div>
-            <div className='Comment-Wrapper'>
-                <div className='Customer-Avatar'>
-                    <img src={userAvatar} alt="" />
-                </div>
-                <div className='Comment-Container'>
-                    <div className='Customer-Name'>
-                        <span>Phạm Tuấn</span>
-                    </div>
-                    <div className='Customer-Rating'>
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                        <img className='ratingStar-Cmt' src={ratingStar} alt="" />
-                    </div>
-                    <div className='Comment-Content'>
-                        <span>Hàng nhận đẹp đúng như mô tả, đóng gói cẩn thận. Giao hàng nhanh.</span>
-                    </div>
-                    <div className='Comment-Media'>
-                        <img src="" alt="" />
-                    </div>
-                </div>
-            </div>
 
+                </div>
+            ))}
 
         </div>
     )

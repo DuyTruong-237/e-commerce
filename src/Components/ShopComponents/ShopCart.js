@@ -1,7 +1,10 @@
 import "./ShopCart.css"
 import React from 'react'
 
+
 export default function ShopCart() {
+
+  
   return (
     <div className="ShopCart-body">
       <div className="SC-left-content">

@@ -12,13 +12,11 @@ const AddProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validate form data before submission
         if (!productName || !productID || !productPrice || !productImage || !productType || !productColor) {
             console.error('Please fill in all fields.');
             return;
         }
 
-        // Construct a FormData object to send the file along with other data
         const formData = new FormData();
         formData.append('productName', productName);
         formData.append('productID', productID);
@@ -28,7 +26,7 @@ const AddProduct = () => {
         formData.append('productColor', productColor);
 
         try {
-            // Perform an HTTP request to send form data to the server
+
             const response = await fetch('your-server-endpoint', {
                 method: 'POST',
                 body: formData,
@@ -36,7 +34,6 @@ const AddProduct = () => {
 
             if (response.ok) {
                 console.log('Product added successfully!');
-                // Reset form fields after successful submission
                 setProductName('');
                 setProductID('');
                 setProductPrice('');
@@ -109,7 +106,6 @@ const AddProduct = () => {
                                                         Type of Product
                                                     </label>
                                                     <div className="col-sm-9">
-                                                        {/* Use onChange to update the selected product type */}
                                                         <input
                                                          class="mg-r5"
                                                             type="radio"

@@ -1,9 +1,24 @@
 import React from "react";
 import './SectionItems.css'
 import './SectionSeller.css'
+import { useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Son from "../../Assets/Images/Product Images/son1.png"
 
 export default function SectionItems() {
+    const location = useLocation();
+    const productName = new URLSearchParams(location.search).get('productName');
+    const productPrice = new URLSearchParams(location.search).get('productPrice');
+
+    const selectedProduct = {
+        name: productName,
+        price: productPrice,
+        // ... thêm các thông tin sản phẩm khác nếu cần
+    };
+
+    console.log(selectedProduct);
+
     return (
         <section class="stProductCart bdbot" role="list">
             <div class="pdcart" role="listitem">
@@ -22,7 +37,7 @@ export default function SectionItems() {
                                 <img class="img_pdi" src={Son}></img>
                             </a>
                             <div class="pdi2">
-                                <a class="pdi2_1" href="#">Son Thỏi M.A.C Amplified Creme Lipstick 3g Chất Lì Mịn Như Nhung BEEBEE</a>
+                                <a class="pdi2_1" href="#"></a>
                             </div>
                         </div>
                     </div>
@@ -45,13 +60,13 @@ export default function SectionItems() {
                         </div>
                     </div>
                     <div class="abc">
-                    <div class="quantitywrap">
-                        <div class="quantity-control">
-                            <button class="decrease-btn ppbtnquanty btnde">-</button>
-                            <input type="text" class="ppbtnquanty quantity-input" role="spinbutton" value="1" readonly />
-                            <button class="increase-btn ppbtnquanty">+</button>
+                        <div class="quantitywrap">
+                            <div class="quantity-control">
+                                <button class="decrease-btn ppbtnquanty btnde">-</button>
+                                <input type="text" class="ppbtnquanty quantity-input" role="spinbutton" value="1" readonly />
+                                <button class="increase-btn ppbtnquanty">+</button>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="totalprice">
                         <span>₫92.900</span>

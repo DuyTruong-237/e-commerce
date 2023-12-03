@@ -8,7 +8,6 @@ import buy from "../../Assets/Images/shopping-bag.svg";
 
 import { useNavigate } from 'react-router-dom';
 export default function ProductItem(props) {
-    // Định nghĩa các giá trị cần truyền qua
     const productName = "SON eve MAC NHUNG li";
     const pastPrice = "69.000";
     const currentPrice = "59.000";
@@ -31,7 +30,6 @@ export default function ProductItem(props) {
                 <a onClick={() => handleProductClick(props.pitem)}>
                 <div className="PIBot">
                     <div className="productName">
-                        {/* Truyền giá trị thông qua props */}
                         <ItemProducts
                             name={props.name}
                         />

@@ -99,6 +99,11 @@
     text-align: center;
 }
 
+.voucherTicket:hover {
+    cursor: pointer;
+    background-color: #faeaec;
+}
+
 .itemInsurance {
     margin-top: 20px;
     display: flex;    

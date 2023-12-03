@@ -30,3 +30,7 @@
     font-size: 19px;
    
 }
+
+.cat-name:hover{
+    cursor: pointer;
+}

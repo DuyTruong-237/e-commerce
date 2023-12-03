@@ -1,9 +1,10 @@
 import React from 'react';
 import { useState, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Item.css';
 import "../../Assets/font-icons/themify-icons-font/themify-icons/themify-icons.css";
-import exItem from '../Items/vn-11134207-7r98o-llt6eul6d7tr35.jpg';
+// import exItem from '../Items/vn-11134207-7r98o-llt6eul6d7tr35.jpg';
 import ratingStar from '../Items/star.png';
 import freeShipIcon from '../Items/d9e992985b18d96aab90969636ebfd0e.png';
 import imageSlider1 from '../Items/vn-11134207-7r98o-llt6eul6d7tr35.jpg';
@@ -21,6 +22,7 @@ export default function () {
   const selectedProduct = location.state?.selectedProduct;
   const [mainImage, setMainImage] = useState(selectedProduct.image[0]);
   const [hoveredImage, setHoveredImage] = useState(null);
+  const navigate = useNavigate();
   const imgRefs = {
     slider1: useRef(null),
     slider2: useRef(null),
@@ -29,6 +31,12 @@ export default function () {
   const handleImageClick = (index) => {
     setMainImage(selectedProduct.image[index]);
   };
+
+  const handleBuyProduct = (item) => {
+    navigate(`/cart?productName=${encodeURIComponent(item.name)}&productPrice=${item.price}&productId=${item.id}`);
+
+    console.log(selectedProduct)
+  }
 
   const handleProductColorHover = (sliderKey) => {
     const newImage = imgRefs[sliderKey]?.current?.src;
@@ -44,7 +52,20 @@ export default function () {
   const {
     image,
     name,
+    rate,
+    reviews,
+    sold,
+    available,
+    price
   } = selectedProduct;
+
+  const renderRatingStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < rating; i++) {
+      stars.push(<img key={i} className='ratingStarIcon' src={ratingStar} alt='' />);
+    }
+    return stars;
+  };
   return (
     <div className='itemWrapper'>
       <div className='itemImage'>
@@ -52,15 +73,15 @@ export default function () {
           <img className='mainImage' src={mainImage} alt="Main Image"></img>
         </div>
         <div className='sliderImage_Wrapper'>
-        {image.map((img, index) => (
-          <img
-            key={index}
-            className='silderImage'
-            src={img}
-            alt={`Slider Image ${index}`}
-            onClick={() => handleImageClick(index)}
-          />
-        ))}
+          {image.map((img, index) => (
+            <img
+              key={index}
+              className='silderImage'
+              src={img}
+              alt={`Slider Image ${index}`}
+              onClick={() => handleImageClick(index)}
+            />
+          ))}
         </div>
         <div className='utilities_Wrapper'>
           <div className='socialSharing'>
@@ -83,24 +104,20 @@ export default function () {
         </div>
         <div className='ratingItem'>
           <div className='ratingStar'>
-            <img src={ratingStar} className='ratingStarIcon'></img>
-            <img src={ratingStar} className='ratingStarIcon'></img>
-            <img src={ratingStar} className='ratingStarIcon'></img>
-            <img src={ratingStar} className='ratingStarIcon'></img>
-            <img src={ratingStar} className='ratingStarIcon'></img>
+            {renderRatingStars(rate)}
           </div>
           <button>
-            <div><u>4.5</u></div>
+            <div><u>{rate}</u></div>
           </button>
           <button>
-            <div className='ratingCount'><u>1000</u> <span>Reviews</span></div>
+            <div className='ratingCount'><u>{reviews}</u> <span>Reviews</span></div>
           </button>
           <button>
-            <div className='soldCount'> <u>2000</u> <span>Sold</span></div>
+            <div className='soldCount'> <u>{sold}</u> <span>Sold</span></div>
           </button>
         </div>
         <div className='priceItem'>
-          ₫35,540,000 - ₫35,690,000
+          {price}
         </div>
         <div className='itemInfo'>
           <div className='itemVoucher'>
@@ -164,14 +181,14 @@ export default function () {
             <button className='increase_btn'>
               <span className='ti-plus'></span>
             </button>
-            <span className='available-product'>4000 available</span>
+            <span className='available-product'>{available} available</span>
           </div>
         </div>
         <div className='buyModal'>
           <div className='addToCart'>
             <span className='ti-shopping-cart'> Add to Cart</span>
           </div>
-          <div className='buyNow'>
+          <div className='buyNow' onClick={handleBuyProduct}>
             <span>Buy Now</span>
           </div>
         </div>
