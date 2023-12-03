@@ -17,7 +17,7 @@ export default function Checkout(){
                         </div>
                        
                         <div class="CheckoutRight bgWhite">
-                        right
+                        
                         </div>
                         </div>
                         </form>
