@@ -57,7 +57,7 @@ export default function Header() {
                     {username?<><a href='/login' class="textWhite textBold ">{username} </a> <ul className="subnav">
                                    <li><a href="/profile">My Profile</a></li>
                                    <li><a href="/order">My Purchase</a></li>
-                                   <li><a href="/">Log out</a></li>
+                                   <li><a href="/login">Log out</a></li>
                     </ul></>  :<><a href='/login' class="textWhite textBold btn-login ">Log in </a> | <a href='#' class="textBold  textWhite ">Sign up </a></>}
                    
 
