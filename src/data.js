@@ -1,22 +1,22 @@
 let CategoriesData = [
-  { url: 'https://media3.scdn.vn/img3/2019/6_1/3teCqf.jpg', name: "Áo Khoác" },
+  { url: 'https://media3.scdn.vn/img3/2019/6_1/3teCqf.jpg', name: "Áo khoác" },
   { url: 'https://vietartproductions.com/wp-content/uploads/2022/04/1_Anh-2-4.jpg', name: "Giày" },
-  { url: 'https://channel.mediacdn.vn/428462621602512896/2023/11/28/image009-17011454931591136603249.jpg', name: "Mĩ phẩm" },
-  { url: 'https://tse2.mm.bing.net/th?id=OIP.TmNTLye_5_vLC8CAEazfBgHaE_&pid=Api&P=0&h=220', name: "TVs" },
+  { url: 'https://channel.mediacdn.vn/428462621602512896/2023/11/28/image009-17011454931591136603249.jpg', name: "Mỹ phẩm" },
+  { url: 'https://tse2.mm.bing.net/th?id=OIP.TmNTLye_5_vLC8CAEazfBgHaE_&pid=Api&P=0&h=220', name: "TV" },
   { url: 'https://cdn.nguyenkimmall.com/images/detailed/691/10047356-dien-thoai-xiaomi-redmi-9a-2gb-32gb-xanh-la-1.jpg', name: "Điện thoại" },
-  { url: 'https://tse4.mm.bing.net/th?id=OIP.Y21yS2_X-nMixlIQHmKy-wHaHa&pid=Api&P=0&h=220', name: "Công cụ" },
-  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw6l5069', name: "Motors" },
-  { url: 'https://down-vn.img.susercontent.com/file/79527aad65104aea685333194d3183c5', name: "Laptops" },
+  { url: 'https://tse4.mm.bing.net/th?id=OIP.Y21yS2_X-nMixlIQHmKy-wHaHa&pid=Api&P=0&h=220', name: "Dụng cụ" },
+  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw6l5069', name: "Xe máy" },
+  { url: 'https://down-vn.img.susercontent.com/file/79527aad65104aea685333194d3183c5', name: "Laptop" },
   { url: 'https://down-vn.img.susercontent.com/file/222364c0321fb7669df1570672c31ae6', name: "Tủ lạnh" },
   { url: 'https://down-vn.img.susercontent.com/file/062b8cbcd638a6c8730c411c88c129b9', name: "Máy giặt" },
-  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg3js55ys8ru25', name: "Máy lạnh" },
-  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lji6w6gg1urmc6', name: "Mắt kính" },
-  { url: 'https://down-vn.img.susercontent.com/file/02a06ae9c4c4638ec30dcb4990ccb75c', name: "Túi xách" },
-  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llt6eul6d7tr35', name: "Iphone" },
+  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg3js55ys8ru25', name: "Máy điều hòa" },
+  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lji6w6gg1urmc6', name: "Máy lọc không khí" },
+  { url: 'https://down-vn.img.susercontent.com/file/02a06ae9c4c4638ec30dcb4990ccb75c', name: "Kính" },
+  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llt6eul6d7tr35', name: "iPhone" },
   { url: 'https://down-vn.img.susercontent.com/file/vn-11134201-23020-frc1z2psaxnv23', name: "Túi xách" },
-  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnph44epqsbxa2', name: "Pants" },
-  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln8td59no6agc9', name: "Tees" },
-  { url: 'https://down-vn.img.susercontent.com/file/sg-11134201-7rbng-lln51xr19i270b', name: "Shirts" },
+  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnph44epqsbxa2', name: "Quần" },
+  { url: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ln8td59no6agc9', name: "Áo thun" },
+  { url: 'https://down-vn.img.susercontent.com/file/sg-11134201-7rbng-lln51xr19i270b', name: "Áo sơ mi" },
 ];
 
 let ProductData = [
@@ -27,7 +27,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/7519b7b794ff3e09fc5e4b11111b16d4',
       'https://down-vn.img.susercontent.com/file/a02eb2a96048b22f44c195c3ad4d64f0'
     ],
-    name: "Angel Land Jacket",
+    name: "Áo khoác Angel Land",
     price: "₫381.000",
     reviews: 100,
     sold: 500,
@@ -41,7 +41,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo5fk1j1wid394',
       'https://down-vn.img.susercontent.com/file/sg-11134201-7rbk0-lkku223aa2exbf'
     ],
-    name: "Aasics Shoes",
+    name: "Giày Aasics",
     rate: "4",
     reviews: 99,
     sold: 150,
@@ -98,7 +98,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/ac82d7eedcf46366d03b8065540af24a',
       'https://down-vn.img.susercontent.com/file/ba30d99db990300761e92c1c2507cf79'
     ],
-    name: "Massage Chair",
+    name: "Ghế Massage",
     rate: "5",
     reviews: 50,
     sold: 25,
@@ -126,7 +126,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/e47ac5872823a2756956350081f43c79',
       'https://down-vn.img.susercontent.com/file/dc66bf96aaa163961d755d4074b1127c'
     ],
-    name: "Laptop AcerPredator Triton500SE PT516-52s-91XH i912900H|32GB|2TB|3080Ti|16'240Hz|W11",
+    name: "Laptop Acer Predator Triton 500 SE PT516-52s-91XH i9 12900H|32GB|2TB|3080Ti|16'240Hz|W11",
     rate: "4",
     reviews: 1,
     sold: 1,
@@ -140,7 +140,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/e224b040c3df6532c82498568b0b5599',
       'https://down-vn.img.susercontent.com/file/319aef02d7393281a892a6e75d438fc9'
     ],
-    name: "Hitachi Refrigerator",
+    name: "Tủ lạnh Hitachi",
     rate: "4",
     reviews: 0,
     sold: 1,
@@ -154,7 +154,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/f248561db8fc95f66b31e0a7cfb10d87',
       'https://down-vn.img.susercontent.com/file/5b302849c52e372a0f35107284a15097'
     ],
-    name: "Bosch WAV28L40SG 9kg",
+    name: "Máy giặt Bosch WAV28L40SG 9kg",
     rate: "5",
     reviews: 111,
     sold: 999,
@@ -168,11 +168,11 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg3kkf4wr816be',
       'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg3kkf4wsmlmd0'
     ],
-    name: "Multi NX Daikin 3.5HP",
+    name: "Điều hòa Daikin Multi NX 3.5HP",
     rate: "5",
     price: "₫66.159.000"
-  },
-  
+  },  
+
   {
     image: [
       'https://down-vn.img.susercontent.com/file/02a06ae9c4c4638ec30dcb4990ccb75c',
@@ -180,7 +180,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/8529e94fed9efd5e7be8c1ac3cd6fc17',
       'https://down-vn.img.susercontent.com/file/036899e83064905239e9809f26d0d087'
     ],
-    name: "RAY-BAN Polarized",
+    name: "Kính RAY-BAN Polarized",
     rate: "4",
     price: "₫11.617.000"
   },
@@ -191,7 +191,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llt6eul6d7tr35',
       'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llt6eul6g0yn0d'   
     ],
-    name: "Apple iPhone 15 Pro Max 256GB",
+    name: "Điện thoại Apple iPhone 15 Pro Max 256GB",
     rate: "5",
     price: "₫35.490.000"
   },
@@ -202,7 +202,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/ac82d7eedcf46366d03b8065540af24a',
       'https://down-vn.img.susercontent.com/file/ba30d99db990300761e92c1c2507cf79'
     ],
-    name: "Massage Chair",
+    name: "Ghế massage",
     rate: "5",
     reviews: 50,
     sold: 25,
@@ -216,7 +216,7 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw56kkcd',
       'https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfox84sw6l5069'
     ],
-    name: "Yamaha R3",
+    name: "Xe máy Yamaha R3",
     rate: "5",
     reviews: 5,
     sold: 3,
@@ -230,15 +230,42 @@ let ProductData = [
       'https://down-vn.img.susercontent.com/file/e47ac5872823a2756956350081f43c79',
       'https://down-vn.img.susercontent.com/file/dc66bf96aaa163961d755d4074b1127c'
     ],
-    name: "Laptop AcerPredator Triton500SE PT516-52s-91XH i912900H|32GB|2TB|3080Ti|16'240Hz|W11",
+    name: "Laptop Acer Predator Triton 500 SE PT516-52s-91XH i9 12900H|32GB|2TB|3080Ti|16'240Hz|W11",
     rate: "4",
     reviews: 1,
     sold: 1,
     available: 4000,
     price: "₫109.980.000"
   },
-  
-];
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/222364c0321fb7669df1570672c31ae6',
+      'https://down-vn.img.susercontent.com/file/e224b040c3df6532c82498568b0b5599',
+      'https://down-vn.img.susercontent.com/file/e224b040c3df6532c82498568b0b5599',
+      'https://down-vn.img.susercontent.com/file/319aef02d7393281a892a6e75d438fc9'
+    ],
+    name: "Tủ lạnh Hitachi",
+    rate: "4",
+    reviews: 0,
+    sold: 1,
+    available: 10,
+    price: "₫45.680.000"
+  },
+  {
+    image: [
+      'https://down-vn.img.susercontent.com/file/062b8cbcd638a6c8730c411c88c129b9',
+      'https://down-vn.img.susercontent.com/file/7e99804c211465acf07ded535a56a99f',
+      'https://down-vn.img.susercontent.com/file/f248561db8fc95f66b31e0a7cfb10d87',
+      'https://down-vn.img.susercontent.com/file/5b302849c52e372a0f35107284a15097'
+    ],
+    name: "Máy giặt Bosch WAV28L40SG 9kg",
+    rate: "5",
+    reviews: 111,
+    sold: 999,
+    available: 1,
+    price: "₫45.680.000"
+  }
+]
 
 let CommentData = [
   {
