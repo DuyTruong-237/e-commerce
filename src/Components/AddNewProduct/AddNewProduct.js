@@ -58,7 +58,7 @@ const AddProduct = () => {
                                 <div className="col-12">
                                     <div className="card">
                                         <div className="card-title text-center mt-3">
-                                            <h3>Add Product</h3>
+                                            <h3>Thêm sản phẩm</h3>
                                         </div>
                                         <div className="card-body">
                                             <form onSubmit={handleSubmit}>

@@ -32,13 +32,13 @@ export default function Header() {
                 <li >
                   <a href="#" class="subHeader inlineBlock textWhite sizeText15">
                     <img src='./images/Icon/notification.svg' class="cssSvg" alt='icon notification'></img>
-                    Notifications
+                    Thông báo
                   </a>
                 </li>
                 <li >
                   <a href="#" class="subHeader inlineBlock textWhite sizeText15">
                     <img src='./images/Icon/earthglobe.svg' class="cssSvg" alt='icon notification'></img>
-                    Language
+                    Ngôn ngữ
                     <ul className="subnav">
                                    <li><a href="/">English</a></li>
                                    <li><a href="/">Vietnamese</a></li>
@@ -69,7 +69,7 @@ export default function Header() {
               <div class="seachBar">
                 <div class="wrap">
                   <div class="search">
-                    <input type="text" class="searchTerm" placeholder="What are you looking for?" />
+                    <input type="text" class="searchTerm" placeholder="Bạn đang tìm kiếm gì" />
                     <a type="submit"
                     href='./SearchResult' class="searchButton">
                       <img class="cssImgSearch" src='./images/Icon/search.svg'></img>

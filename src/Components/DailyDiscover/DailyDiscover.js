@@ -9,7 +9,7 @@ export default function DailyDiscover() {
 
   return (
     <div className="DD-body">
-      <div className="dd-title">Daily Discover</div>
+      <div className="dd-title">GỢI Ý HÔM NAY</div>
       <div className='br-line'></div>
         
       <div className="dd-content">
@@ -20,7 +20,7 @@ export default function DailyDiscover() {
         ))}
       </div>
 
-      <div className="dd-btn"><a className="showmore" href="./discover">SHOW MORE</a></div>
+      <div className="dd-btn"><a className="showmore" href="./discover">Xem thêm</a></div>
     </div>
   );
 }

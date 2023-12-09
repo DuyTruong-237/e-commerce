@@ -35,7 +35,7 @@ export default function HomeEvent() {
   return (
     <div className="HE-body">
       
-        <div className='HE-title'> PAMPAM  EVENT</div>
+        <div className='HE-title'> SỰ KIỆN </div>
         <div className='br-line'></div>
 
         <div className='He-content'>

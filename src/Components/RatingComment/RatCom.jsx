@@ -1,13 +1,11 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
-import starIcon from '../Items/star.png'
-import ratingStar from '../../Components/Items/star.png'
-import userAvatar from '../../Components/RatingComment/user.png'
-import { CommentData } from "../../data"
-import './RatCom.css'
+import React, { useState, useEffect } from 'react';
+import starIcon from '../Items/star.png';
+import ratingStar from '../../Components/Items/star.png';
+import userAvatar from '../../Components/RatingComment/user.png';
+import { CommentData } from "../../data";
+import './RatCom.css';
 
-export default function
-    () {
+export default function RatingComment() {
     const [comments, setComments] = useState(CommentData);
     const [filteredComments, setFilteredComments] = useState(CommentData);
 
@@ -31,57 +29,57 @@ export default function
 
     useEffect(() => {
         setFilteredComments(comments);
-        console.log(comments)
-      }, [comments]);
-    
+        console.log(comments);
+    }, [comments]);
+
     return (
         <div className='ratingCom-Wrapper'>
-            <div className='ratingCom-Title'>ĐÁNH GIÁ SẢN PHẨM</div>
+            <div className='ratingCom-Title'>PRODUCT REVIEWS</div>
             <div className='ratingOverview-Container'>
                 <div className='ratingOverview-Wrapper'>
                     <div className='ratingBriefing'>
                         <span>5.0 </span>
-                        <span>trên 5</span>
+                        <span>out of 5</span>
                     </div>
                     <div className='ratingStar-Wrapper'>
-                        <img className='ratingStar-Overview' src={starIcon} />
-                        <img className='ratingStar-Overview' src={starIcon} />
-                        <img className='ratingStar-Overview' src={starIcon} />
-                        <img className='ratingStar-Overview' src={starIcon} />
-                        <img className='ratingStar-Overview' src={starIcon} />
+                        <img className='ratingStar-Overview' src={starIcon} alt="Star" />
+                        <img className='ratingStar-Overview' src={starIcon} alt="Star" />
+                        <img className='ratingStar-Overview' src={starIcon} alt="Star" />
+                        <img className='ratingStar-Overview' src={starIcon} alt="Star" />
+                        <img className='ratingStar-Overview' src={starIcon} alt="Star" />
                     </div>
                 </div>
                 <div className='ratingFilter-Wrapper'>
                     <div className='ratingFilter'>
-                        Tất cả
+                        All
                     </div>
                     <div className='ratingFilter' onClick={handleFilter5star}>
-                        5 Sao
+                        5 Stars
                     </div>
                     <div className='ratingFilter' onClick={handleFilter4star}>
-                        4 Sao
+                        4 Stars
                     </div>
                     <div className='ratingFilter'>
-                        3 Sao
+                        3 Stars
                     </div>
                     <div className='ratingFilter'>
-                        2 Sao
+                        2 Stars
                     </div>
                     <div className='ratingFilter'>
-                        1 Sao
+                        1 Star
                     </div>
                     <div className='ratingFilter'>
-                        Có Bình Luận
+                        With Comments
                     </div>
                     <div className='ratingFilter'>
-                        Có Hình Ảnh/ Video
+                        With Media (Image/Video)
                     </div>
                 </div>
             </div>
             {filteredComments.map((cmt) => (
-                <div className='Comment-Wrapper'>
+                <div key={cmt.id} className='Comment-Wrapper'>
                     <div className='Customer-Avatar'>
-                        <img src={userAvatar} alt="" />
+                        <img src={userAvatar} alt="User Avatar" />
                     </div>
                     <div className='Comment-Container'>
                         <div className='Customer-Name'>
@@ -94,13 +92,12 @@ export default function
                             <span>{cmt.comment}</span>
                         </div>
                         <div className='Comment-Media'>
-                            <img src="" alt="" />
+                            {/* You can include media (image/video) here */}
+                            {/* <img src={cmt.media} alt="Comment Media" /> */}
                         </div>
                     </div>
-
                 </div>
             ))}
-
         </div>
-    )
+    );
 }

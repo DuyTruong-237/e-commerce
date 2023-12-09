@@ -6,7 +6,7 @@ import didong from './dientu.jpg'
 import CategoriesItem from './CategoriesItem/CategoriesItem'
 export default function Categories() {
   return (
-    <Background title="Categories" className="cat-br" >
+    <Background title="DANH MỤC" className="cat-br" >
         
         <div className='cat-content'>
             <div className='cat-items'>

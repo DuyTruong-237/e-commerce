@@ -58,7 +58,7 @@ function Slider() {
         </div>
         <div className='sli-item'>
             <img className='sli-item-img'src={img3}/>
-            <div className='sli-item-name'>Free Shipping
+            <div className='sli-item-name'>Miễn phí Ship
 </div>
         </div>
         <div className='sli-item'>
